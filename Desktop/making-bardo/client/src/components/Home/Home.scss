@@ -1,0 +1,13 @@
+.categories_section {
+    
+    background-color: var(--primary-white);
+    font-family: 'Poppins', sans-serif;
+    .categories {
+        @media (min-width:1024px){
+            
+            display: flex;
+            justify-content: space-around;
+            margin-bottom:1em;
+        }
+    }
+}

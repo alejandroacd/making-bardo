@@ -1,0 +1,52 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@100&display=swap');
+
+
+.dashboard_container {
+
+    position: relative;
+    top:15vh;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: bolder;
+
+    .container_title {
+        font-weight: bold;
+        letter-spacing: 5px;
+        margin:1em;
+    }
+    .card {
+        flex-direction: row;
+        
+        .card-body .card-title {
+            font-weight: bold;
+            font-size:1em;
+            text-align: center;
+        }
+
+        button {
+            font-weight: bold;
+            margin:0.5em;
+            width: 100%;
+            font-size: 0.8em;
+        }
+
+        .btn {
+            padding: 0.3em
+        }
+    
+    }
+
+
+}
+
+@media (min-width:1024px){
+
+    .dashboard_container {
+        display: flex;
+        flex-direction: column;
+    }
+    .card {
+        width: 85%;
+        margin:0 auto;
+    }
+}

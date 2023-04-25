@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100&display=swap');
+
+.background_container {
+    
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+.camperas_background {
+    width: 100%;
+    height: 50vh;
+    cursor: pointer;
+    background-image: url('./camperabackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.5); 
+    font-family: 'Poppins', sans-serif;
+    transition: 0.7s all;
+    overflow: hidden;
+
+    h1 {
+        position: relative;
+        top: 4em;
+        margin: 1em;
+        text-align: center;
+        z-index: index 2;
+        color: var(--primary-white);
+        text-align: center;
+        letter-spacing: 3px;
+    }
+
+}
+
+@media (min-width:1024px){
+
+    .background_container {
+        width: 30%;
+    }
+ 
+    .camperas_background:hover {
+        transform: scale(1.2);
+    }
+}

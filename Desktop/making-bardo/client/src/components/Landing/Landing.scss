@@ -1,0 +1,111 @@
+
+.landing {
+    position: relative;
+    top:12vh;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation-name: fade;
+    animation-duration: 1s;
+    transition: 1s;
+    background-position: 55%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+
+    @media (min-width:1024px) {
+        background-position: center;
+        height: 100vh;
+        background-size: cover;
+        margin-bottom: 10em;
+        }
+
+    .landing_text {
+        z-index:3;
+        width: 50%;
+        display:flex;
+        flex-direction:column;
+
+        img {
+            width: 50%;
+            margin:0 auto;
+        }
+
+        h1 {
+            font-family: 'Permanent Marker', cursive;
+        }
+        p {
+            font-weight: bold;
+
+        }
+        
+        h1,p {
+            text-align: center;
+            color:var(--primary-white);
+            margin:1em;
+            letter-spacing: 1px;
+
+        }
+
+    }
+ 
+
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.landing_buttons {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:70vh;
+    z-index:4;
+
+
+    button {
+        
+        margin:1em;
+        background-color: var(--dark-bg);
+        padding:1.3em;
+        border-radius: 30px;
+        border: none;
+        opacity: 0.7;
+        font-family: 'Poppins', sans-serif;
+        color:var(--primary-white);
+        font-weight: bold;
+    }
+
+    :hover {
+        opacity: 1;
+    }
+}
+
+.landing::after {
+    height: 100vh;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.5;
+}
+

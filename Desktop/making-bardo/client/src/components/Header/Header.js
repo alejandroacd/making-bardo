@@ -3,9 +3,11 @@ import '../../components/Header/Header.scss'
 import { HiMenu, HiShoppingCart, HiOutlineQuestionMarkCircle, HiChevronDown } from 'react-icons/hi'
 import { Link, useNavigate } from 'react-router-dom'
 import { useCart } from '../../contexts/cartContext'
+import Cart from '../Cart/Cart'
+
 
 const Header = () => {
-    const { cart } = useCart()
+    const { cart, toggleCart, showCart} = useCart()
     const navigate = useNavigate()
     const [toggle, setToggle] = useState(false)
     const [toggleSubMenu, setToggleSubMenu] = useState(false)
@@ -33,7 +35,8 @@ const Header = () => {
                         <li> <HiOutlineQuestionMarkCircle size={25} /> </li>
                         <li> {cart.length} <HiShoppingCart className='cart_list' size={25} /> </li>
                     </ul>
-                    <Link to="/cart"> {cart.length} <HiShoppingCart size={20} /> </Link>
+                    
+                   <p>{cart.length} <HiShoppingCart onClick={() => showCart()} size={20} /></p>
                     <HiMenu size={20} onClick={showMenu} />
                 </div>
 
@@ -57,6 +60,8 @@ const Header = () => {
                     <li> PREGUNTAS FRECUENTES </li>
                 </ul>
             </div>
+
+            <Cart />
         </>
     )
 }

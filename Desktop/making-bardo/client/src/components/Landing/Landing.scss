@@ -13,6 +13,11 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+
+    .landing_text img {
+        width: 100%;
+        
+    }
    
 
     @media (min-width:1024px) {
@@ -29,8 +34,11 @@
         flex-direction:column;
 
         img {
-            width: 50%;
+            width: 100%;
             margin:0 auto;
+            @media (min-width:1024px) {
+                width: 50%;
+            }
         }
 
         h1 {

@@ -31,7 +31,6 @@
     z-index: 4;
     top:0;
     width: 67%;
- 
     flex-direction: column;
     transition: 1s;
     opacity: 0.9;
@@ -128,10 +127,11 @@
     margin:0.5em;
     width: 50%;
     justify-content: space-around;
-    a {
+    p {
         display: flex;
+        position: relative;
+        top:0.5em;
         align-items: center;
-        color:var(--primary-white)
     }
 
     .group-list {
@@ -186,7 +186,8 @@
         display: flex;
         align-items: center;
 
-        a {
+        p {
+        
             display: none;
         }
         

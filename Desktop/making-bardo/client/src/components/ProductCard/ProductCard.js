@@ -6,7 +6,10 @@ import { useCart } from '../../contexts/cartContext'
 const ProductCard = (props) => {
   
   const { addToCart } = useCart()
-  
+
+  const redirect = () => {
+    window.location = `/product/?id=${props.code}`
+  }
   useEffect(() => {
     console.log(props)
   },[])
@@ -25,7 +28,7 @@ const ProductCard = (props) => {
                    <p className='card-text '>  {props.price} $ </p>
 
                    <button className='btn btn-dark' onClick={() => addToCart(props)}> <HiShoppingCart size={20} /> </button>
-                   <button className='btn btn-dark'> <HiEye size={20} /> </button>
+                   <button className='btn btn-dark' onClick={redirect}> <HiEye size={20} /> </button>
                    </div>
                 </div>
         </div>

@@ -11,6 +11,11 @@ export const CartProvider = ({children}) => {
 
     const [loading,setLoading] = useState(false)
     const [cart,setCart] = useState(JSON.parse(localStorage.getItem('cart')) || []) 
+    const [toggleCart, setToggleCart] = useState(false);
+
+    const showCart = () => {
+        setToggleCart(!toggleCart)    
+    }
     const [totalCheckout, setTotalCheckout] = useState(cart.length > 0 ? cart
     .map(x => x.price * x.qty)
     .reduce((x,y) => x + y )
@@ -53,7 +58,7 @@ const calculateItems = () => {
     
     //Añadir al carrito
     const addToCart = (item) => {
-         let exist = cart.find(x => x.name === item.name)
+         let exist = cart.find(x => x.name === item)
          let index = cart.findIndex((elem,indice)=> {
             if(elem.id === item.id) {
                 return true;
@@ -93,7 +98,7 @@ const qtyMinus = (item) => {
 // Eliminar item del carrito  
     const removeFromCart = (id) => {
         const newCart = cart.filter(x => 
-          {return  x.id !== id}
+          {return  x.name !== id}
         )
         setCart(newCart)
         localStorage.setItem('cart', JSON.stringify(newCart))
@@ -120,7 +125,9 @@ const qtyMinus = (item) => {
         totalQty,
         calculateItems,
         loading,
-        loadin
+        loadin,
+        toggleCart,
+        showCart
         
 
      

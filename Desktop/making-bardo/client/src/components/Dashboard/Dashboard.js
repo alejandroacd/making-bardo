@@ -18,7 +18,7 @@ const Dashboard = (props) => {
       <h1 className='container_title'> {props.category} </h1>
      {data.map((x,y) => {
       return (
-        <ProductCard  key={y} name={x.name} price={x.price} image1={x.image1} image2={x.image2} />
+        <ProductCard  key={y} name={x.name} price={x.price} image1={x.image1} image2={x.image2} category={x.category} code={x.code} />
       )
      })}
      </div>

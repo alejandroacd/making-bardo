@@ -1,0 +1,33 @@
+.product-detail-container {
+    height: 100vh;
+    position: relative;
+    top:10vh;
+
+    .go_back_container {
+        margin: 1em;
+    }
+
+    p {
+        font-size:1.5em
+    }
+
+    .product_detail_image {
+        height: 50%;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+        transition: 0.5s all;
+    }
+
+    .product_other_images {
+        margin-top: 1em;
+        width: 100%;
+        display: flex;
+        justify-content: row;
+        gap: 20px;
+        img {
+            width: 20%;
+            height: 15%;
+        }
+    }
+}

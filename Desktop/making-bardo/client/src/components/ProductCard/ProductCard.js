@@ -1,8 +1,11 @@
 import { useEffect,useState,useRef } from 'react'
 import {  HiShoppingCart, HiEye } from 'react-icons/hi'
 import './ProductCard.scss'
+import { useCart } from '../../contexts/cartContext'
 
 const ProductCard = (props) => {
+  
+  const { addToCart } = useCart()
   
   useEffect(() => {
     console.log(props)
@@ -21,7 +24,7 @@ const ProductCard = (props) => {
                    </p>
                    <p className='card-text '>  {props.price} $ </p>
 
-                   <button className='btn btn-dark'> <HiShoppingCart size={20} /> </button>
+                   <button className='btn btn-dark' onClick={() => addToCart(props)}> <HiShoppingCart size={20} /> </button>
                    <button className='btn btn-dark'> <HiEye size={20} /> </button>
                    </div>
                 </div>

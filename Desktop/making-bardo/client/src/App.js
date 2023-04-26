@@ -1,6 +1,6 @@
 import './components/App.scss'
 import '../src/css/bootstrap.min.css'
-
+import { CartProvider } from './contexts/cartContext'
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -9,6 +9,8 @@ function App() {
 
   return (
     <>
+<CartProvider>
+
     <BrowserRouter>
     <div className="App">
     <Header />
@@ -24,7 +26,7 @@ function App() {
     </Routes>
     </div>
     </BrowserRouter> 
-  
+    </CartProvider>
     </>
   );
 }

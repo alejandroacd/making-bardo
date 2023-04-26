@@ -1,5 +1,6 @@
 
 import './Pants.scss'
+
 const Pants = () => {
     const navigate = (link) => {
         window.location = `${link}` 

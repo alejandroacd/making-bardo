@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import ProductCard from '../ProductCard/ProductCard'
 import {HiChevronLeft } from 'react-icons/hi'
 
+
 const Dashboard = (props) => {
 
   const navigate = useNavigate()
@@ -15,9 +16,9 @@ const Dashboard = (props) => {
       <div onClick={() => navigate(-1)}> <HiChevronLeft /> Volver </div>
       
       <h1 className='container_title'> {props.category} </h1>
-     {data.map(x => {
+     {data.map((x,y) => {
       return (
-        <ProductCard name={x.name} price={x.price} image1={x.image1} image2={x.image2} />
+        <ProductCard  key={y} name={x.name} price={x.price} image1={x.image1} image2={x.image2} />
       )
      })}
      </div>

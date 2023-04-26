@@ -2,10 +2,10 @@ import { useState } from 'react'
 import '../../components/Header/Header.scss'
 import { HiMenu, HiShoppingCart, HiOutlineQuestionMarkCircle, HiChevronDown } from 'react-icons/hi'
 import { Link, useNavigate } from 'react-router-dom'
-
-
+import { useCart } from '../../contexts/cartContext'
 
 const Header = () => {
+    const { cart } = useCart()
     const navigate = useNavigate()
     const [toggle, setToggle] = useState(false)
     const [toggleSubMenu, setToggleSubMenu] = useState(false)
@@ -31,9 +31,9 @@ const Header = () => {
                         <li> CATÁLOGO </li>
                         <li> CONTACTO </li>
                         <li> <HiOutlineQuestionMarkCircle size={25} /> </li>
-                        <li> 0 <HiShoppingCart className='cart_list' size={25} /> </li>
+                        <li> {cart.length} <HiShoppingCart className='cart_list' size={25} /> </li>
                     </ul>
-                    <Link to="/cart">  <HiShoppingCart size={20} /> </Link>
+                    <Link to="/cart"> {cart.length} <HiShoppingCart size={20} /> </Link>
                     <HiMenu size={20} onClick={showMenu} />
                 </div>
 

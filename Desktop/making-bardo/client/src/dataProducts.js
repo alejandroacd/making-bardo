@@ -30,7 +30,7 @@ const products = [
       
     },
     {
-        code:3,
+        code:4,
         category: 'Camperas',
         name: 'Campera Shendenim',
         price: '23000',
@@ -39,7 +39,7 @@ const products = [
         image2: '/camperas/shendenim1.jpg',
     },
     {
-        code:4,
+        code:5,
         category: 'Camperas',
         name: 'Campera Farfalla',
         price: '22500',
@@ -49,7 +49,7 @@ const products = [
         
     },
     {
-        code:5,
+        code:6,
         category: 'Camperas',
         name: 'Campera Universe',
         price: '23000',
@@ -59,7 +59,7 @@ const products = [
        
     },
     {
-        code:6,
+        code:7,
         category: 'Camperas',
         name: 'Campera Kinesis',
         price: '22500',
@@ -69,7 +69,7 @@ const products = [
         
     },
     {
-        code:7,
+        code:8,
         category: 'Camperas',
         name: 'Campera Paradise',
         price: '23000',
@@ -79,7 +79,7 @@ const products = [
         
     },
     {
-        code:8,
+        code:9,
         category: 'Pantalones',
         name: 'Pantalón Donne',
         price: '13800',
@@ -89,7 +89,7 @@ const products = [
         
     },
     {
-        code:9,
+        code:10,
         category: 'Pantalones',
         name: 'Pantalón Argento',
         price: '13700',
@@ -99,7 +99,7 @@ const products = [
         
     },
     {
-        code:10,
+        code:11,
         category: 'Pantalones',
         name: 'Pantalón Miranda',
         price: '13900',

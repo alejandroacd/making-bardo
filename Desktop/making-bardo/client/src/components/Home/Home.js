@@ -17,7 +17,7 @@ const Home = () => {
         <Chalecos />
         </div>
         </div>
-       
+       <h1>LO ÚLTIMO </h1>
 
         </>
     )

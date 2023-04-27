@@ -7,13 +7,14 @@
     background-repeat: no-repeat;
     animation-name: fade;
     animation-duration: 1s;
-    transition: 1s;
+    transition: 0.3s all;
     background-position: 55%;
     z-index: 1;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 
+    
     .landing_text img {
         width: 100%;
         

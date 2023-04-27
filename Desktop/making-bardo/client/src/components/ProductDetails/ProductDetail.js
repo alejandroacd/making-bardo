@@ -3,11 +3,12 @@ import './ProductDetails.scss'
 import data from '../../dataProducts'
 import { HiChevronLeft, HiOutlineShoppingCart } from 'react-icons/hi'
 import { useNavigate } from 'react-router-dom'
-
+import { useCart } from '../../contexts/cartContext'
 
 const ProductDetail = () => {
 
     const navigate = useNavigate()
+    const { addToCart } = useCart()
     const queryString = window.location.search
     const decoded = new URLSearchParams(queryString)
     const value = parseInt(decoded.get('id'))
@@ -16,7 +17,7 @@ const ProductDetail = () => {
     const changeBackground = (e) => {
     
         document.getElementById('background_product').style.backgroundImage = `url(${e.target.src})`
-
+       
             }
 
     useEffect(() => {
@@ -33,7 +34,10 @@ const ProductDetail = () => {
             </div>
             <h1> {productData[0].name.toUpperCase()} </h1>
             <p> {productData[0].price} $ </p>
-            <button className='btn btn-outline-dark'> AÑADIR AL CARRITO <HiOutlineShoppingCart /> </button>
+            <h1>Métodos de pago: </h1>
+            <li> Efectivo (30% off) </li>
+            <li> Mercado Pago </li>
+            <button onClick={() => addToCart(productData[0])} className='btn btn-dark mb-5 mt-3'> AÑADIR AL CARRITO <HiOutlineShoppingCart /> </button>
         </div>
     )   
 }

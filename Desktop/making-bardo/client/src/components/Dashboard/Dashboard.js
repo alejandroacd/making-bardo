@@ -3,12 +3,13 @@ import products from '../../dataProducts'
 import { useNavigate } from 'react-router-dom'
 import ProductCard from '../ProductCard/ProductCard'
 import {HiChevronLeft } from 'react-icons/hi'
+import { useEffect, useState } from 'react'
 
 
 const Dashboard = (props) => {
 
   const navigate = useNavigate()
-  const data = products.filter(x => x.category === props.category)
+  let data = products.filter(x => x.category === props.category)
 
   return (
      <>

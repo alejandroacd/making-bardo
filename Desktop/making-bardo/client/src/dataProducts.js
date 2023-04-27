@@ -96,6 +96,7 @@ const products = [
         description: '',
         image1: '/pantalones/argento1.jpg',
         image2: '/pantalones/argento2.jpg',
+        image3: '/pantalones/argento3.jpg'
         
     },
     {

@@ -9,7 +9,7 @@ const Camperas = () => {
     return (
         <div className='background_container'>
         <div className="camperas_background category_option" onClick={() => navigate('/camperas')}>
-            <h1> camperas </h1>
+            <h1> Camperas </h1>
         </div>
         </div>
     )

@@ -33,7 +33,7 @@ const Header = () => {
                         <li> CATÁLOGO </li>
                         <li> CONTACTO </li>
                         <li> <HiOutlineQuestionMarkCircle size={25} /> </li>
-                        <li> {cart.length} <HiShoppingCart className='cart_list' size={25} /> </li>
+                        <li onClick={() => showCart()}> {cart.length} <HiShoppingCart className='cart_list' size={25} /> </li>
                     </ul>
                     
                    <p>{cart.length} <HiShoppingCart onClick={() => showCart()} size={20} /></p>
@@ -51,8 +51,8 @@ const Header = () => {
                         CATÁLOGO <HiChevronDown />
                     </p>
                     <ul className={toggleSubMenu ? 'showSubMenu' : 'hideSubMenu' }>
-                    <li>Camperas</li>
-                    <li> Pantalones </li>
+                    <li onClick={(e) => {window.location.href =  `/${e.target.innerText.toLowerCase()}`} }>Camperas</li>
+                    <li onClick={(e) => {window.location.href =  `/${e.target.innerText.toLowerCase()}`} }> Pantalones </li>
                     <li> Chalecos </li>
                     </ul>
                     </div>

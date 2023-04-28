@@ -8,7 +8,7 @@ const Chalecos = () => {
     return (
         <div className='background_container'>
         <div className="chalecos_background" onClick={() => navigate('/camperas')}>
-            <h1> chalecos </h1>
+            <h1> Chalecos </h1>
         </div>
         </div>
     )

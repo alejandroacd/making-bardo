@@ -33,8 +33,8 @@ const Landing = () => {
             </div>
 
             <div className='landing_buttons'>
-                    <button> Ver lo último </button>
-                    <a href='#categories'><button> Ver categorías </button></a>
+                    <a href='#ultimo'>Lo último</a>
+                    <a href='#categories'>Ver categorías</a>
 
               </div>
           

@@ -9,7 +9,7 @@ const Pants = () => {
     return (
         <div className='background_container'>
         <div className="pants_background" onClick={() => navigate('/pantalones')}>
-            <h1> pantalones </h1>
+            <h1> Pantalones </h1>
         </div>
         </div>
     )

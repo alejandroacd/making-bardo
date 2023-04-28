@@ -37,8 +37,11 @@ const Cart = () => {
                          )
                     })}
                 </div>
+
+                <div className='checkout_box'>
                 <h1> Total: {totalPrice()}$ </h1>
-                <button className='btn btn-outline-light w-50 ml-5 mt-2'> PAGAR  </button>
+                <button className='btn btn-outline-light'> FINALIZAR COMPRA  </button>
+                </div>
             </div>
         </>
     )

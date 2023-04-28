@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100&display=swap');
 
 
 .pants_background {
@@ -9,7 +8,6 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
-    font-family: 'Poppins', sans-serif;
     box-shadow: inset 0px 0px 0 2000px rgba(0,0,0,0.5);
     transition: 0.7s all;
     overflow: hidden;
@@ -19,7 +17,6 @@
     h1 {
         position: relative;
         top: 4em;
-      
         margin: 1em;
         text-align: center;
         z-index: index 2;

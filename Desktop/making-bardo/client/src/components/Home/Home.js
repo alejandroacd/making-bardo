@@ -2,9 +2,9 @@ import Landing from '../Landing/Landing'
 import Camperas from '../Camperas/Camperas';
 import Chalecos from '../Chalecos/Chalecos'
 import Pants from '../Pants/Pants'
+import HomeProductCard from '../HomeProductCard/HomeProductCard';
 import '../Home/Home.scss'
 import data from '../../dataProducts'
-import {  HiShoppingCart, HiEye } from 'react-icons/hi'
 import { useCart } from '../../contexts/cartContext'
 
 const Home = () => {
@@ -23,24 +23,9 @@ const Home = () => {
         </div>
         <h1 className='text-center m-5'> <b>LO ÚLTIMO</b></h1>
         <div className='latest_post container'>
-   
             {data.map(x => {
                 return (
-                    <>
-                    <div id="ultimo" className='latest_home_card'>
-                        <div className='image_home_card'>
-                        <img src={x.image2} alt='Imágen del producto' />
-                        <img className='imghome-card-hover'src={x.image1} alt='Imágen del producto' />
-                        </div>
-                        <h1> {x.name.toUpperCase()} </h1>
-                        <p> {x.price}$ </p>
-                        <div className='product_options'>
-                            <button className='btn btn-dark'><HiShoppingCart size={25} /></button>
-                            <button className='btn btn-dark'><HiEye size={25} /></button>
-                        </div>
-                    </div>
-                    </>
-
+                    <HomeProductCard code={x.code} key={x.code} name={x.name} image1={x.image1} image2={x.image2} price={x.price} />
                 )
             })}
         </div>

@@ -26,7 +26,7 @@ const Cart = () => {
                                 </div>
 
                                 <div className='info_container'>
-                                    <h1> {x.name.toUpperCase()} </h1>
+                                    <h1> {x.name} </h1>
                                     <p> {x.price}$ </p>
                                     <BsTrash size={15} onClick={() => removeFromCart(x.name)} />
                                  </div>

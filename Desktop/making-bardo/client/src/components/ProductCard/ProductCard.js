@@ -10,6 +10,7 @@ const ProductCard = (props) => {
   const redirect = () => {
     window.location = `/product/?id=${props.code}`
   }
+  
   useEffect(() => {
     console.log(props)
   },[])

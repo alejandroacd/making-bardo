@@ -86,6 +86,10 @@
     p {
         text-align: end;
         margin: 1em;
+
+        @media (min-width:1024px){
+            margin:3em;
+        }
     }
 
     h1 {

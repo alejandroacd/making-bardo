@@ -1,0 +1,119 @@
+
+.catalogo_block {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15vh;
+    flex-wrap: wrap;
+
+    .go_back {
+        font-weight: bold;
+        margin: 1em;
+        font-size: 1.2em;
+    }
+}
+
+
+.title_and_filter {
+
+    h1 {
+        font-weight: bold;
+        letter-spacing: 3px;
+    }
+
+    select {
+        padding:0.5em;
+        margin: 1em;
+    }
+}
+.catalogo_container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+ 
+    @media (min-width:1024px){
+     flex-direction: row;
+     gap: 3em;
+    }
+
+   
+}
+ .latest_home_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding:1em;
+   
+    @media (min-width:1024px){
+        width: 25%;
+       
+    }
+
+    .product_options {
+        width: 85%;
+        margin:0 auto;
+        display: flex;
+        justify-content: space-evenly;
+
+        svg {
+            margin:1em;
+        }
+
+        svg:hover{
+            transform: scale(1.2);
+            transition: 0.1s all;
+        }
+
+        @media (min-width:1024px){
+            width: 100%;
+        }
+   
+    }
+    .image_home_card {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        position: relative;
+
+    }
+
+    h1 {
+        margin:0.5em;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+    img {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .imghome-card-hover {
+        position: absolute;
+        top: 0;
+        display: flex;
+        margin:0 auto;
+        right: 0;
+        opacity: 0;
+        left: 0;
+        bottom: 0;
+        transition:  .2s;
+
+    }
+    .imghome-card-hover:hover{
+        opacity: 1
+    }
+}
+

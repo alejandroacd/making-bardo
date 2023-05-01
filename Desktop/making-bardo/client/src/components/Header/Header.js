@@ -30,8 +30,8 @@ const Header = () => {
 
                 <div className="header_list">
                     <ul className='group-list'>
-                        <li> CATÁLOGO </li>
-                        <li> CONTACTO </li>
+                        <li onClick={() => navigate('/catalogo')}> CATÁLOGO </li>
+                        <li onClick={() => navigate('/contacto')}> CONTACTO </li>
                         <li> <HiOutlineQuestionMarkCircle size={25} /> </li>
                         <li onClick={() => showCart()}> {cart.length} <HiShoppingCart className='cart_list' size={25} /> </li>
                     </ul>

@@ -1,11 +1,13 @@
 import './components/App.scss'
 import '../src/css/bootstrap.min.css'
-import { CartProvider } from './contexts/cartContext'
 import Header from './components/Header/Header'
 import Home from './components/Home/Home'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import ProductDetail from './components/ProductDetails/ProductDetail'
 import Dashboard  from './components/Dashboard/Dashboard'
+import Catalogo  from './components/Catalogo/Catalogo'
+import Contacto from './components/Contacto/Contacto'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { CartProvider } from './contexts/cartContext'
 function App() {
 
   return (
@@ -24,7 +26,8 @@ function App() {
       <Route exact path="/product/" element={<ProductDetail />} />
       <Route exact path="/camperas" element={<Dashboard category="Camperas" />} />
       <Route exact path="/pantalones" element={<Dashboard category="Pantalones" />} />
-
+      <Route exact path="/catalogo" element={<Catalogo />} />
+      <Route exact path='/contacto' element={<Contacto />} /> 
     </Routes>
     </div>
     </BrowserRouter> 

@@ -6,6 +6,7 @@ import ProductDetail from './components/ProductDetails/ProductDetail'
 import Dashboard  from './components/Dashboard/Dashboard'
 import Catalogo  from './components/Catalogo/Catalogo'
 import Contacto from './components/Contacto/Contacto'
+import Faq from './components/Faq/Faq'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { CartProvider } from './contexts/cartContext'
 function App() {
@@ -28,6 +29,8 @@ function App() {
       <Route exact path="/pantalones" element={<Dashboard category="Pantalones" />} />
       <Route exact path="/catalogo" element={<Catalogo />} />
       <Route exact path='/contacto' element={<Contacto />} /> 
+      <Route exact path='/faq' element={<Faq />} />
+      
     </Routes>
     </div>
     </BrowserRouter> 

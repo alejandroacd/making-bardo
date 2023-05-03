@@ -32,7 +32,7 @@ const Header = () => {
                     <ul className='group-list'>
                         <li onClick={() => navigate('/catalogo')}> CATÁLOGO </li>
                         <li onClick={() => navigate('/contacto')}> CONTACTO </li>
-                        <li> <HiOutlineQuestionMarkCircle size={25} /> </li>
+                        <li onClick={() => navigate('/faq')}> <HiOutlineQuestionMarkCircle size={25} /> </li>
                         <li onClick={() => showCart()}> {cart.length} <HiShoppingCart className='cart_list' size={25} /> </li>
                     </ul>
                     
@@ -56,8 +56,8 @@ const Header = () => {
                     <li> Chalecos </li>
                     </ul>
                     </div>
-                    <li> CONTACTO</li>
-                    <li> PREGUNTAS FRECUENTES </li>
+                    <li onClick={() => {window.location.href =  '/contacto'}}> CONTACTO</li>
+                    <li onClick={() => {window.location.href =  '/faq'}}> PREGUNTAS FRECUENTES </li>
                 </ul>
             </div>
 

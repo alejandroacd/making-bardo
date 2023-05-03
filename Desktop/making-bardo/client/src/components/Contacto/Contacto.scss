@@ -1,3 +1,7 @@
+a {
+    color: var(--dark-bg);
+}
+
 .contacto_container {
     position: relative;
     top:15vh;
@@ -5,15 +9,21 @@
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
     padding:1em;
 
+    .instagram_title {
+        font-size: 2em;
+        margin-top:1em;
+    }
+
     @media (min-width:1024px){
-        width: 50%;
+        width: 70%;
     }
    
     h1 {
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         font-weight: bold;
         margin:0.5em;
     }
@@ -22,9 +32,9 @@
         margin-top:1em;
         
         @media  (min-width:1024px) {
-            margin: 0 auto;
             width: 70%;
-            padding:1em;
+            margin-left: 15%;
+            padding:0.5em;
             
         }
   
@@ -76,8 +86,14 @@
 
 .instagram {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: 3em;
+   
+
+    .instagram_logo {
+        display: flex;
+        align-items: center;
+    }
 
     p {
         font-size: 1.2em;

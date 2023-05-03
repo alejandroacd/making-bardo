@@ -1,5 +1,7 @@
 import './Contacto.scss'
 import { BsInstagram } from 'react-icons/bs'
+import { Link } from 'react-router-dom'
+
 
 const Contacto = () => {
     return (
@@ -23,12 +25,17 @@ const Contacto = () => {
                     <button class="btn-submit btn btn-outline-dark" type="submit" > Enviar </button>
                 </form>
 
-                <h1>INSTAGRAM</h1>
-             
-              <div class='instagram'>
                 
+             
+              <div className='instagram'>
+              <h1 className='instagram_title'>INSTAGRAM</h1>
+
+              <div className='instagram_logo'>
               <BsInstagram size={35} />
-              <p>makingbardo</p>
+            <Link to="https://instagram.com/makingbardo"> <p>makingbardo</p> </Link>
+              </div>
+                
+              
               </div>
             
 

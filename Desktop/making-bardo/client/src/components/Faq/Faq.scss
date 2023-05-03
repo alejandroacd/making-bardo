@@ -1,0 +1,43 @@
+.faq_container {
+    position: relative;
+    top:15vh;
+    
+    .faq_title {
+        margin:1em;
+        font-weight: bold;
+    }
+    h1 {
+        letter-spacing: 1px;
+    }
+}
+
+.collapsible {
+    background-color: var(--dark-bg);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5em;;
+  }
+
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    transition:  0.2s ease-out;
+    overflow: hidden;
+  
+
+    p {
+        margin:1em;
+        font-weight: bold;
+    }
+  }

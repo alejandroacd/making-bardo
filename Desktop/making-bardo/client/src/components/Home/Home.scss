@@ -1,16 +1,20 @@
 
 .categories_section {
-    
-    
+    position: relative;
+    margin-top:100vh;
     background-color: var(--primary-white);
     font-family: 'Poppins', sans-serif;
+    
+    @media (min-width:1024px){
+        margin-top: 110vh;
+    }
 
     .categories {
         @media (min-width:1024px){
-            
+
             display: flex;
             justify-content: space-around;
-            margin-bottom:10em;
+            
         }
     }
 }

@@ -28,8 +28,8 @@ const Landing = () => {
         <>
         <div className={loaded ? 'landing loaded' : 'landing'}  style={{backgroundImage: `url(${images[currentIndex]})`}} onLoad={() => setLoaded(true)}>
             <div className='landing_text'> 
-                <img alt="Logo making bardo" src="../loguito.png" />
                 <p>30% off pagando en efectivo</p>
+               
             </div>
 
             <div className='landing_buttons'>

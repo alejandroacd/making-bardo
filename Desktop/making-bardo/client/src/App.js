@@ -7,8 +7,9 @@ import Dashboard  from './components/Dashboard/Dashboard'
 import Catalogo  from './components/Catalogo/Catalogo'
 import Contacto from './components/Contacto/Contacto'
 import Faq from './components/Faq/Faq'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
 import { CartProvider } from './contexts/cartContext'
+
 function App() {
 
   return (

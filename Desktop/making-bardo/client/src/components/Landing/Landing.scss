@@ -1,7 +1,7 @@
 
 .landing {
-    position: relative;
-    top:12vh;
+    position: absolute;
+    top:0;
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,14 +12,9 @@
     z-index: 1;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
     flex-wrap: wrap;
-
-    
-    .landing_text img {
-        width: 100%;
-        
-    }
-   
+    width: 100%;
 
     @media (min-width:1024px) {
         background-position: center;
@@ -30,32 +25,19 @@
 
     .landing_text {
         z-index:3;
-        width: 50%;
-        display:flex;
-        flex-direction:column;
-
-        img {
-            width: 100%;
-            margin:0 auto;
-            @media (min-width:1024px) {
-                width: 50%;
-            }
-        }
-
+        position: relative;
   
         p {
             font-weight: bold;
             font-family: 'Anuphan';
-
+            text-align: center;
+            color: var(--primary-white);
+        
+            opacity: 0.7;
+            font-size: 1.2em;
         }
         
-        h1,p {
-            text-align: center;
-            color:var(--primary-white);
-            margin:1em;
-            letter-spacing: 1px;
-
-        }
+        
 
     }
  
@@ -82,7 +64,7 @@
     display: flex;
     justify-content: center;
     position: absolute;
-    top:70vh;
+    top:80vh;
     z-index:4;
     font-family: 'Anuphan';
 

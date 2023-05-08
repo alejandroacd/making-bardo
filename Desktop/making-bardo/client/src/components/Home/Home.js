@@ -9,7 +9,6 @@ import { useCart } from '../../contexts/cartContext'
 
 const Home = () => {
 
-    const { addToCart } = useCart()
     return (
         <>
         <Landing />

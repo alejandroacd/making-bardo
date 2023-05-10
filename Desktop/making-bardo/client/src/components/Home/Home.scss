@@ -25,11 +25,13 @@
    flex-direction: column;
    justify-content: center;
    flex-wrap: wrap;
+   
 
    @media (min-width:1024px){
     flex-direction: row;
-    gap: 3em;
-   }
+    gap:1em;
+    margin-bottom:3em;
+}
 }
 
 
@@ -41,17 +43,29 @@
    
     @media (min-width:1024px){
         width: 25%;
-       
     }
 
     .product_options {
-        width: 85%;
+        width: 55%;
         margin:0 auto;
         display: flex;
         justify-content: space-evenly;
+        position: absolute;
+        right: 0;
+        left: 50%;    
+        bottom:0;
+        top:80%;
 
         svg {
-            margin:1em;
+            margin:0.2em;
+            border-radius: 30px;
+            background-color: var(--primary-white);
+            padding:0.7em;
+           @media (min-width:1024px){
+            padding:0.5em;
+            background-color: var(--primary-white);
+            border-radius: 30px;
+           }
         }
 
         svg:hover{
@@ -60,7 +74,12 @@
         }
 
         @media (min-width:1024px){
-            width: 100%;
+            left: 0;
+            top:90%;
+            width: 50%;
+            margin:0 auto;
+            height: 20%;
+            
         }
    
     }
@@ -76,6 +95,7 @@
     }
 
     h1 {
+        
         margin:0.5em;
         font-size: 1.5em;
         text-align: center;

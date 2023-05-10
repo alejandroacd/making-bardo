@@ -21,7 +21,7 @@ const Home = () => {
         </div>
         </div>
         <h1 className='text-center m-5'> <b>LO ÚLTIMO</b></h1>
-        <div className='latest_post container'>
+        <div className='latest_post'>
             {data.map(x => {
                 return (
                     <HomeProductCard code={x.code} key={x.code} name={x.name} image1={x.image1} image2={x.image2} price={x.price} />

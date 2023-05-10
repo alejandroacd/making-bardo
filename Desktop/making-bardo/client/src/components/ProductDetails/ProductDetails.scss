@@ -4,8 +4,20 @@
     top:10vh;
 
     button {
-        margin-left:20%;
+        margin: 1em;
+        font-weight: bold;
+        border: none;
+        background-color: var(--light);
+        color: var(--gray);
+        border:1px solid var(--gray);
+        padding:0.7em;
+        font-size: 0.9em;
+        
+    }
 
+    button:hover {
+        background-color: var(--gray);
+        color:var(--light)
     }
 
     .go_back_container {
@@ -52,9 +64,8 @@
 @media (min-width:1024px){
 
   .product-detail-container button {
-    padding:1em;
-    width: 30%;
-    margin-left: 35%;
+    width: 100%;
+    
     font-weight: bold;
   }
 

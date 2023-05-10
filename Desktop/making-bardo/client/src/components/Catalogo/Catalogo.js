@@ -39,7 +39,7 @@ const Catalogo = () => {
             <div className='catalogo_container'>
                 {dataFiltered.map(x => {
                     return (
-                        <HomeProductCard name={x.name} image1={x.image1} image2={x.image2} price={x.price} />
+                        <HomeProductCard code={x.code} name={x.name} image1={x.image1} image2={x.image2} price={x.price} />
                     )
                 })}
             </div>

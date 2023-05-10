@@ -1,6 +1,11 @@
 .faq_container {
     position: relative;
     top:15vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
 
     .faq_title {
         margin:1em;
@@ -29,7 +34,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 0.5em;;
+    margin-bottom: 0.5em;
+
+    @media (min-width:1024px){
+        width: 70%;
+    }
+    svg {
+        pointer-events: none;
+    }
   }
 
   
@@ -38,6 +50,10 @@
     max-height: 0;
     transition:  0.2s ease-out;
     overflow: hidden;
+    font-weight: bold;
+    @media (min-width: 1024px){
+        width: 70%;
+    }
   
 
     p {

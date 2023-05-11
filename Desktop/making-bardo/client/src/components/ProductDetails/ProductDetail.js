@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import './ProductDetails.scss'
 import data from '../../dataProducts'
 import { HiChevronLeft, HiOutlineShoppingCart } from 'react-icons/hi'
+import { AiOutlineCreditCard } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom'
 import { useCart } from '../../contexts/cartContext'
 
@@ -46,9 +47,12 @@ const ProductDetail = () => {
             <div className='container'>
             <h1> {productData[0].name.toUpperCase()} </h1>
             <p> {productData[0].price} $ </p>
-            <h1> Métodos de pago: </h1>
-            <li> Efectivo (30% off) </li>
-            <li> Mercado Pago </li>
+            <span> <AiOutlineCreditCard size={25} />  <b> 3 cuotas sin interés</b> </span>
+            <br/>
+            <br/>
+            <span> <b>30% off con efectivo / transferencia / mercado pago (envío de dinero) ( {productData[0].price - parseInt(productData[0].price) * 0.20} $  ) </b> </span>
+            
+            
             </div>
 
             <div className='d-flex flex-direction-row w-100'>

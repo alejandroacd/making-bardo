@@ -17,8 +17,8 @@ const HomeProductCard = (props) => {
         <>
             <div id="ultimo" className='latest_home_card'>
                 <div className='image_home_card'>
-                    <img src={props.image2} alt='Imágen del producto' />
-                    <img className='imghome-card-hover' src={props.image1} alt='Imágen del producto' />
+                    <img loading='lazy' src={props.image2} alt='Imágen del producto' />
+                    <img loading='lazy' className='imghome-card-hover' src={props.image1} alt='Imágen del producto' />
                     <div className='product_options'>
                     <HiShoppingCart size={45} onClick={() => addToCart(props)} />
                     <HiEye size={45} onClick={redirect} />

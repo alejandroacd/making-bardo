@@ -52,18 +52,37 @@
     }
 
     .product_options {
-        width: 85%;
+        width: 55%;
         margin:0 auto;
         display: flex;
         justify-content: space-evenly;
+        position: absolute;
+        right: 0;
+        left: 50%;    
+        bottom:0;
+        top:80%;
+
+        @media (min-width:1024px){
+            left: 0;
+       
+        }
+
 
         svg {
-            margin:1em;
+            opacity: 0.5;
+            cursor: pointer;
+            margin:0.2em;
+            padding:0.7em;
+            border-radius: 30px;
+            background-color: var(--primary-white);
+
+      
         }
 
         svg:hover{
             transform: scale(1.2);
             transition: 0.1s all;
+            opacity: 1;
         }
 
         @media (min-width:1024px){

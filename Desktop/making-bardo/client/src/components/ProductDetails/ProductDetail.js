@@ -42,6 +42,14 @@ const ProductDetail = () => {
             <div  className='product_other_images'>
                 <img src={productData[0].image1} alt="Imágen del producto 1 "  onClick={(e) => changeBackground(e)}/>
                 <img src={productData[0].image2} alt="Imágen del producto 2" onClick={(e) => changeBackground(e)} />
+                {productData[0].image3 ? <img src={productData[0].image3} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+                {productData[0].image4 ? <img src={productData[0].image4} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+                {productData[0].image5 ?  <img src={productData[0].image5} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+                {productData[0].image6 ?  <img src={productData[0].image6} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+                {productData[0].image7 ?  <img src={productData[0].image7} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+
+
+               
             </div>
 
             <div className='container'>
@@ -50,9 +58,9 @@ const ProductDetail = () => {
             <span> <AiOutlineCreditCard size={25} />  <b> 3 cuotas sin interés</b> </span>
             <br/>
             <br/>
-            <span> <b>30% off con efectivo / transferencia / mercado pago (envío de dinero) ( {productData[0].price - parseInt(productData[0].price) * 0.20} $  ) </b> </span>
+            <span> <b>20% off con efectivo / transferencia / mercado pago (envío de dinero) ( {productData[0].price - parseInt(productData[0].price) * 0.20} $  ) </b> </span>
             
-            
+      
             </div>
 
             <div className='d-flex flex-direction-row w-100'>

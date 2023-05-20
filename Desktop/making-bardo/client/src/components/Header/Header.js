@@ -44,9 +44,12 @@ const Header = () => {
 
     return (
         <>
+   
             <div id="header" className="header p-1 d-flex">
+    
                 <div className="logo_container" onClick={() => {window.location = '/'}} >
-                <img alt="Logo making bardo" src="../loguito.png" />                </div>
+                <img alt="Logo making bardo" src="../loguito.png" /> 
+                 </div>
 
                 <div className="header_list">
                     <ul className='group-list'>
@@ -73,7 +76,7 @@ const Header = () => {
                     <ul className={toggleSubMenu ? 'showSubMenu' : 'hideSubMenu' }>
                     <li onClick={(e) => {window.location.href =  `/${e.target.innerText.toLowerCase()}`} }>Camperas</li>
                     <li onClick={(e) => {window.location.href =  `/${e.target.innerText.toLowerCase()}`} }> Pantalones </li>
-                    <li> Chalecos </li>
+                    <li onClick={(e) => {window.location.href =  `/${e.target.innerText.toLowerCase()}`} } > Chalecos </li>
                     </ul>
                     </div>
                     <li onClick={() => {window.location.href =  '/contacto'}}> CONTACTO</li>

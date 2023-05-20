@@ -59,8 +59,8 @@ const products = [
         name: 'Campera Universe',
         price: '35400',
         description: '',
-        image1: '/camperas/voice1.jpg',
-        image2: '/camperas/voice1.jpg',
+        image1: '/camperas/universe2.jpg',
+        image2: '/camperas/universe1.jpg',
        
     },
     {
@@ -120,7 +120,7 @@ const products = [
         code:13,
         category: 'Pantalones',
         name: 'Pantalón Donne',
-        price: '13800',
+        price: '21800',
         description: '',
         image1: '/pantalones/donne1.jpg',
         image2: '/pantalones/donne2.jpg',
@@ -130,10 +130,10 @@ const products = [
         code:14,
         category: 'Pantalones',
         name: 'Pantalón Argento',
-        price: '13700',
+        price: '20860',
         description: '',
-        image1: '/pantalones/argento2.jpg',
-        image2: '/pantalones/argento3.jpg',
+        image1: '/pantalones/argento3.jpg',
+        image2: '/pantalones/argento1.jpg',
        
         
     },
@@ -141,90 +141,112 @@ const products = [
         code:15,
         category: 'Pantalones',
         name: 'Pantalón Miranda',
-        price: '13900',
+        price: '22900',
+        description: '',
+        image1: '/pantalones/miranda1.jpg',
+        image2: '/pantalones/miranda2.jpg',
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón ByCruz',
+        price: '22900',
+        description: '',
+        image1: '/pantalones/bycruz1.jpg',
+        image2: '/pantalones/bycruz2.jpg', 
+    },
+    {
+        code:17,
+        category: 'Pantalones',
+        name: 'Pantalón Femmelines',
+        price: '23200',
+        description: '',
+        image1: '/pantalones/femmelines1.jpg',
+        image2: '/pantalones/femmelines2.jpg',
+        image3: '/pantalones/femmelines3.jpg',
+        image4: '/pantalones/femmelines4.jpg',
+        image5: '/pantalones/femmelines5.jpg',
+        image6: '/pantalones/femmelines6.jpg',
+        image7: '/pantalones/femmelines7.jpg'
+        
+    },
+    {
+        code:18,
+        category: 'Pantalones',
+        name: 'Pantalón Kellybenett',
+        price: '17700',
+        description: '',
+        image1: '/pantalones/kellybennet1.jpg',
+        image2: '/pantalones/kellybennet2.jpg', 
+        
+    },
+    {
+        code:19,
+        category: 'Pantalones',
+        name: 'Pantalón Maillot',
+        price: '21400',
+        description: '',
+        image1: '/pantalones/maillot1.jpg',
+        image2: '/pantalones/maillot2.jpg', 
+        
+    },
+    {
+        code:20,
+        category: 'Pantalones',
+        name: 'Pantalón Mbmb',
+        price: '21150',
         description: '',
         image1: '/pantalones/miranda1.jpg',
         image2: '/pantalones/miranda2.jpg', 
-    },
-    {
-        code:16,
-        category: 'Pantalones',
-        name: 'Pantalón ByCruz',
-        price: '',
-        description: '',
         
     },
     {
-        code:16,
-        category: 'Pantalones',
-        name: 'Pantalón ByCruz',
-        price: '',
-        description: '',
-        
-    },
-    {
-        code:16,
-        category: 'Pantalones',
-        name: 'Pantalón ByCruz',
-        price: '',
-        description: '',
-        
-    },
-    {
-        code:16,
-        category: 'Pantalones',
-        name: 'Pantalón Femmelines',
-        price: '',
-        description: '',
-        
-    },
-    {
-        code:16,
-        category: 'Pantalones',
-        name: 'Pantalón Kellybenett',
-        price: '',
-        description: '',
-        
-    },
-    {
-        code:16,
-        category: 'Pantalones',
-        name: 'Pantalón Maillot',
-        price: '',
-        description: '',
-        
-    },
-    {
-        code:16,
-        category: 'Pantalones',
-        name: 'Pantalón Mbmb',
-        price: '',
-        description: '',
-        
-    },
-    {
-        code:16,
+        code:21,
         category: 'Pantalones',
         name: 'Pantalón Omnia',
-        price: '',
+        price: '23200',
         description: '',
+        image1: '/pantalones/omnia1.jpg',
+        image2: '/pantalones/omnia2.jpg', 
         
     },
     {
-        code:16,
+        code:22,
         category: 'Pantalones',
         name: 'Pantalón Pollock',
-        price: '',
+        price: '23000',
         description: '',
+        image1: '/pantalones/pollock2.jpg',
+        image2: '/pantalones/pollock1.jpg', 
         
     },
     {
-        code:16,
+        code:23,
         category: 'Pantalones',
         name: 'Pantalón Roots',
-        price: '',
+        price: '23000',
         description: '',
+        image1: '/pantalones/roots1.jpg',
+        image2: '/pantalones/roots2.jpg', 
         
+    },
+    {
+        code:24,
+        category: 'Chalecos',
+        name: 'Chaleco Mamba',
+        price: '33450',
+        description: '',
+        image1:'/chalecos/mamba1.jpg',
+        image2:'/chalecos/mamba2.jpg'
+    },
+    {
+        code:25,
+        category: 'Chalecos',
+        name: 'Chaleco Rnb',
+        price: '32800',
+        description:'',
+        image1:'/chalecos/rnb2.jpg',
+        image2:'/chalecos/rnb1.jpg'
     }
  
 ]

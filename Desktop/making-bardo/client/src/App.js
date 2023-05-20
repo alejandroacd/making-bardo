@@ -28,6 +28,7 @@ function App() {
       <Route exact path="/product/" element={<ProductDetail />} />
       <Route exact path="/camperas" element={<Dashboard category="Camperas" />} />
       <Route exact path="/pantalones" element={<Dashboard category="Pantalones" />} />
+      <Route exact path="/chalecos" element={<Dashboard category="Chalecos" />} />
       <Route exact path="/catalogo" element={<Catalogo />} />
       <Route exact path='/contacto' element={<Contacto />} /> 
       <Route exact path='/faq' element={<Faq />} />

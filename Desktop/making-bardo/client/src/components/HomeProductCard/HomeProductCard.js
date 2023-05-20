@@ -5,9 +5,12 @@ import { useCart} from '../../contexts/cartContext'
 const HomeProductCard = (props) => {
 
     const { addToCart } = useCart()
+    
     const redirect = () => {
         window.location = `/product/?id=${props.code}`
       }
+
+   
       
     return (
 

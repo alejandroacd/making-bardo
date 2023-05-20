@@ -16,6 +16,10 @@ const Catalogo = () => {
         setCategory(e.target.value)
     }
 
+    const goToProduct = (e) => {
+        console.log(e.target)
+    }
+
     useEffect(() => {
         console.log(category)
     }, [category])

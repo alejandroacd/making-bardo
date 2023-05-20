@@ -79,8 +79,8 @@ const products = [
         name: 'Campera Russ',
         price: '35400',
         description: '',
-        image1: '/camperas/russ1.jpg',
-        image2: '/camperas/russ2.jpg',
+        image1: '/camperas/russ2.jpg',
+        image2: '/camperas/russ1.jpg',
         
     },
     {
@@ -132,9 +132,9 @@ const products = [
         name: 'Pantalón Argento',
         price: '13700',
         description: '',
-        image1: '/pantalones/argento1.jpg',
-        image2: '/pantalones/argento2.jpg',
-        image3: '/pantalones/argento3.jpg'
+        image1: '/pantalones/argento2.jpg',
+        image2: '/pantalones/argento3.jpg',
+       
         
     },
     {
@@ -153,7 +153,80 @@ const products = [
         price: '',
         description: '',
         
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón ByCruz',
+        price: '',
+        description: '',
+        
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón ByCruz',
+        price: '',
+        description: '',
+        
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón Femmelines',
+        price: '',
+        description: '',
+        
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón Kellybenett',
+        price: '',
+        description: '',
+        
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón Maillot',
+        price: '',
+        description: '',
+        
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón Mbmb',
+        price: '',
+        description: '',
+        
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón Omnia',
+        price: '',
+        description: '',
+        
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón Pollock',
+        price: '',
+        description: '',
+        
+    },
+    {
+        code:16,
+        category: 'Pantalones',
+        name: 'Pantalón Roots',
+        price: '',
+        description: '',
+        
     }
+ 
 ]
 
 export default products

@@ -3,7 +3,6 @@ import products from '../../dataProducts'
 import { useNavigate } from 'react-router-dom'
 import ProductCard from '../ProductCard/ProductCard'
 import {HiChevronLeft } from 'react-icons/hi'
-import { useEffect, useState } from 'react'
 
 
 const Dashboard = (props) => {
@@ -19,7 +18,7 @@ const Dashboard = (props) => {
       <h1 className='container_title'> {props.category.toUpperCase()} </h1>
      {data.map((x,y) => {
       return (
-        <ProductCard  key={y} name={x.name} price={x.price} image1={x.image1} image2={x.image2} category={x.category} code={x.code} />
+        <ProductCard key={y} name={x.name} price={x.price} image1={x.image1} image2={x.image2} category={x.category} code={x.code} />
       )
      })}
      </div>

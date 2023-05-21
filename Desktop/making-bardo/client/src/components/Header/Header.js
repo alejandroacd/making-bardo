@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import '../../components/Header/Header.scss'
-import { HiMenu, HiShoppingCart, HiOutlineQuestionMarkCircle, HiChevronDown } from 'react-icons/hi'
+import { HiMenu, HiOutlineQuestionMarkCircle, HiChevronDown } from 'react-icons/hi'
+import { MdOutlineFavoriteBorder } from 'react-icons/md'
 import {  useNavigate, useLocation } from 'react-router-dom'
 import { useCart } from '../../contexts/cartContext'
 import Cart from '../Cart/Cart'
@@ -56,10 +57,10 @@ const Header = () => {
                         <li onClick={() => {window.location = '/catalogo'}}> CATÁLOGO </li>
                         <li onClick={() => {window.location = '/contacto'}}> CONTACTO </li>
                         <li onClick={() => {window.location = '/faq'}}> <HiOutlineQuestionMarkCircle size={25} /> </li>
-                        <li onClick={() => showCart()}> {cart.length} <HiShoppingCart className='cart_list' size={25} /> </li>
+                        <li onClick={() => showCart()}> {cart.length} <MdOutlineFavoriteBorder className='cart_list' size={25} /> </li>
                     </ul>
                     
-                   <p>{cart.length} <HiShoppingCart onClick={() => showCart()} size={20} /></p>
+                   <p>{cart.length} <MdOutlineFavoriteBorder onClick={() => showCart()} size={20} /></p>
                     <HiMenu size={20} onClick={showMenu} />
                 </div>
 

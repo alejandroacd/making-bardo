@@ -40,7 +40,7 @@
     .product_detail_image {
         height: 70%;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         object-fit: cover;
         transition: 0.5s all;
@@ -52,6 +52,7 @@
         width: 95%;
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 20px;
         img {
             width: 10%;

@@ -40,13 +40,13 @@ const ProductDetail = () => {
             <div id="background_product" className='product_detail_image' style={{backgroundImage:`url(${productData[0].image1})`}}>
             </div>
             <div  className='product_other_images'>
-                <img src={productData[0].image1} alt="Imágen del producto 1 "  onClick={(e) => changeBackground(e)}/>
-                <img src={productData[0].image2} alt="Imágen del producto 2" onClick={(e) => changeBackground(e)} />
-                {productData[0].image3 ? <img src={productData[0].image3} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
-                {productData[0].image4 ? <img src={productData[0].image4} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
-                {productData[0].image5 ?  <img src={productData[0].image5} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
-                {productData[0].image6 ?  <img src={productData[0].image6} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
-                {productData[0].image7 ?  <img src={productData[0].image7} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+                <img loading='lazy' src={productData[0].image1} alt="Imágen del producto 1 "  onClick={(e) => changeBackground(e)}/>
+                <img loading='lazy' src={productData[0].image2} alt="Imágen del producto 2" onClick={(e) => changeBackground(e)} />
+                {productData[0].image3 ? <img  loading='lazy' src={productData[0].image3} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+                {productData[0].image4 ? <img loading='lazy' src={productData[0].image4} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+                {productData[0].image5 ?  <img loading='lazy' src={productData[0].image5} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+                {productData[0].image6 ?  <img loading='lazy' src={productData[0].image6} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
+                {productData[0].image7 ?  <img loading='lazy' src={productData[0].image7} alt="Imágen del producto 4" onClick={(e) => changeBackground(e)} /> : null}
 
 
                

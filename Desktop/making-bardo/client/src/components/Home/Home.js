@@ -20,7 +20,7 @@ const Home = () => {
         <Chalecos />
         </div>
         </div>
-        <h1 className='text-center m-5'> <b>LO ÚLTIMO</b></h1>
+        <h1 className='text-center m-5'> <b> LO ÚLTIMO </b></h1>
         <div className='latest_post'>
             {data.map(x => {
                 return (

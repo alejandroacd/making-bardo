@@ -1,5 +1,6 @@
 import {  HiShoppingCart, HiEye } from 'react-icons/hi'
 import { useCart} from '../../contexts/cartContext'
+import { MdOutlineFavoriteBorder } from 'react-icons/md'
 
 
 const HomeProductCard = (props) => {
@@ -20,7 +21,7 @@ const HomeProductCard = (props) => {
                     <img loading='lazy' src={props.image2} alt='Imágen del producto' />
                     <img loading='lazy' className='imghome-card-hover' src={props.image1} alt='Imágen del producto' />
                     <div className='product_options'>
-                    <HiShoppingCart size={45} onClick={() => addToCart(props)} />
+                    <MdOutlineFavoriteBorder size={45} onClick={() => addToCart(props)} />
                     <HiEye size={45} onClick={redirect} />
                 </div>
                 </div>

@@ -20,16 +20,11 @@ const Landing = () => {
         }, 500)
     }
 
-    useEffect(() => {
-        setTimeout(nextSlide, 3500)
-    }, [currentIndex])
-
+ 
     return (
         <>
             <div className={loaded ? 'landing loaded' : 'landing'} style={{ backgroundImage: `url(${images[currentIndex]})` }} onLoad={() => setLoaded(true)}>
-                <div className='landing_text'>
-                        <p>20% off pagando en efectivo / transferencia. <br/>Envío gratis comprando 2 o más prendas</p>
-                </div>
+   
 
                 <div className='landing_buttons'>
                     <a href='#ultimo'>Lo último</a>
@@ -37,6 +32,9 @@ const Landing = () => {
 
                 </div>
 
+                <div className='landing_text'>
+                        <p>20% off pagando en efectivo / transferencia. <br/>Envío gratis comprando 2 o más prendas</p>
+                </div>
             </div>
 
 

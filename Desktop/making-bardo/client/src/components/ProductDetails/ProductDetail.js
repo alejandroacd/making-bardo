@@ -38,7 +38,7 @@ const ProductDetail = () => {
         <div className='product-detail-container container mt-5'>
             <div className='go_back_container' onClick={() => navigate(-1)}> <HiChevronLeft size={25} /> Atrás </div>
             <div id="background_product" className='product_detail_image' style={{backgroundImage:`url(${productData[0].image1})`}}>
-            </div>
+            
             <div  className='product_other_images'>
                 <img loading='lazy' src={productData[0].image1} alt="Imágen del producto 1 "  onClick={(e) => changeBackground(e)}/>
                 <img loading='lazy' src={productData[0].image2} alt="Imágen del producto 2" onClick={(e) => changeBackground(e)} />
@@ -51,8 +51,10 @@ const ProductDetail = () => {
 
                
             </div>
+            </div>
+            
 
-            <div className='container'>
+            <div className='product-details container'>
             <h1> {productData[0].name.toUpperCase()} </h1>
             <p> {productData[0].price} $ </p>
             <span> <AiOutlineCreditCard size={25} />  <b> 3 cuotas sin interés</b> </span>
@@ -60,14 +62,12 @@ const ProductDetail = () => {
             <br/>
             <span> <b>20% off con efectivo / transferencia / mercado pago (envío de dinero) ( {productData[0].price - parseInt(productData[0].price) * 0.20} $  ) </b> </span>
             
+            <button style={{marginTop:'1em'}} onClick={() => addToCart(productData[0])} > AÑADIR AL CARRITO <HiOutlineShoppingCart /> </button>
+            <button onClick={() => sendMessage(`Hola! Quiero comprar el siguiente producto, ¿Hay disponibilidad?: ${thisPage}`)}> INICIAR COMPRA </button>
+
       
             </div>
 
-            <div className='d-flex flex-direction-row w-100'>
-            <button onClick={() => addToCart(productData[0])} > AÑADIR AL CARRITO <HiOutlineShoppingCart /> </button>
-            <button onClick={() => sendMessage(`Hola! Quiero comprar el siguiente producto, ¿Hay disponibilidad?: ${thisPage}`)}> INICIAR COMPRA </button>
-
-            </div>
            
         </div>
     )   

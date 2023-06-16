@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import './ProductDetails.scss'
 import data from '../../dataProducts'
 import { HiChevronLeft, HiOutlineShoppingCart } from 'react-icons/hi'
+import {MdOutlineFavoriteBorder} from 'react-icons/md'
 import { AiOutlineCreditCard } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom'
 import { useCart } from '../../contexts/cartContext'
@@ -36,7 +37,7 @@ const ProductDetail = () => {
 
     return (
         <div className='product-detail-container container mt-5'>
-            <div className='go_back_container' onClick={() => navigate(-1)}> <HiChevronLeft size={25} /> Atrás </div>
+            <div className='go_back_container d-flex flex-row' onClick={() => navigate(-1)}> <HiChevronLeft size={25} /> Atrás </div>
             <div id="background_product" className='product_detail_image' style={{backgroundImage:`url(${productData[0].image1})`}}>
             
             <div  className='product_other_images'>
@@ -62,7 +63,7 @@ const ProductDetail = () => {
             <br/>
             <span> <b>20% off con efectivo / transferencia / mercado pago (envío de dinero) ( {productData[0].price - parseInt(productData[0].price) * 0.20} $  ) </b> </span>
             
-            <button style={{marginTop:'1em'}} onClick={() => addToCart(productData[0])} > AÑADIR AL CARRITO <HiOutlineShoppingCart /> </button>
+            <button style={{marginTop:'1em'}} onClick={() => addToCart(productData[0])} > AGREGAR A FAVORITOS <MdOutlineFavoriteBorder /> </button>
             <button onClick={() => sendMessage(`Hola! Quiero comprar el siguiente producto, ¿Hay disponibilidad?: ${thisPage}`)}> INICIAR COMPRA </button>
 
       

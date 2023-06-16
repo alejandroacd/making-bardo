@@ -58,7 +58,7 @@
 
     .product_detail_image {
         position: relative;
-        height: 80%;
+        height: 50%;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -67,6 +67,7 @@
 
         @media (min-width:1024px){
             width: 60%;
+            height: 80%;
             top:13%
         }
     }

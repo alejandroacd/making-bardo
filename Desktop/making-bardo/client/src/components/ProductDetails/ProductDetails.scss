@@ -56,7 +56,11 @@
         opacity: 0.4;
        }
 
+       dialog {
+        display:none;
+       }
        dialog[open] {
+        display: block;
         animation: myFadeIn 0.4s ease normal;
       }
       

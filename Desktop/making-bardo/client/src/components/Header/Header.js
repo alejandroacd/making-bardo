@@ -16,20 +16,29 @@ const Header = () => {
 
     useEffect(() => {
         const header = document.getElementById('header');
+        const logo = document.getElementById('logo')
+        const icons = document.getElementsByClassName('icon')
+        const headerlist = document.getElementById('headerlist')
 
         if(location.pathname === '/'){
-            header.style.backgroundColor = 'transparent'
             window.addEventListener('scroll', () => {
                 if(window.scrollY < 1000){
                     header.style.backgroundColor = 'transparent'
+                    headerlist.style.color = 'var(--dark-bg)'
+                    logo.src = '../logosinfondo2.png'
                 }
                 if(window.scrollY>0){
-                    header.style.backgroundColor = 'black'
+                    header.style.backgroundColor = 'var(--dark-bg)'
+                    logo.src = '../logosinfondo3.png'
+                    headerlist.style.color = 'var(--primary-white)'
+
                 }
             })
         }
         if(location.pathname !== '/'){
             header.style.backgroundColor = 'black'
+            logo.src = '../logosinfondo3.png'
+            headerlist.style.color = 'var(--primary-white)'
         }
     },[window.scrollY])
 
@@ -46,13 +55,13 @@ const Header = () => {
     return (
         <>
    
-            <div id="header" className="header p-1 d-flex">
+            <div id="header" className="header d-flex">
     
                 <div className="logo_container" onClick={() => {window.location = '/'}} >
-                <img alt="Logo making bardo" src="../loguito.png" /> 
+                <img id="logo" alt="Logo making bardo" src="../logosinfondo2.png" /> 
                  </div>
 
-                <div className="header_list">
+                <div id="headerlist" className="header_list">
                     <ul className='group-list'>
                         <li onClick={() => {window.location = '/catalogo'}}> CATÁLOGO </li>
                         <li onClick={() => {window.location = '/contacto'}}> CONTACTO </li>
@@ -60,8 +69,8 @@ const Header = () => {
                         <li onClick={() => showCart()}> {cart.length} <MdOutlineFavoriteBorder className='cart_list' size={25} /> </li>
                     </ul>
                     
-                   <p>{cart.length} <MdOutlineFavoriteBorder onClick={() => showCart()} size={20} /></p>
-                    <HiMenu size={20} onClick={showMenu} />
+                   <p className='icon'>{cart.length} <MdOutlineFavoriteBorder className='icon' onClick={() => showCart()} size={20} /></p>
+                    <HiMenu className='icon' size={20} onClick={showMenu} />
                 </div>
 
 

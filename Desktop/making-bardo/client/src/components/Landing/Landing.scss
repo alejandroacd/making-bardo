@@ -1,14 +1,20 @@
+.landing_container {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 300px;
+}
 
 .landing {
+    height:70vh;
     position: absolute;
-    top:0;
-    height: 100vh;
-    background-size:cover;
+    top:15%;
+    background-size: 110%;
     background-repeat: no-repeat;
     animation-name: fade;
     animation-duration: 0.1s;
     transition: 0.3s all;
-    background-position: 55%;
+    background-position: center;
+    overflow: hidden;
     z-index: 1;
     display: flex;
     justify-content: center;
@@ -17,33 +23,13 @@
     width: 100%;
 
     @media (min-width:1024px) {
+        background-size: contain;
+        top:10%;
         background-position: center;
-        height: 100vh;
-        
-        margin-bottom: 10em;
+        height: 90vh;
+
         }
 
-    .landing_text {
-        z-index:3;
-        position: relative;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center; 
-        
-
-        p {
-            font-weight: bold;
-            font-family: 'Anuphan';
-            text-align: center;
-            color: var(--primary-white);
-            opacity: 0.7;
-            font-size: 1em; 
-            letter-spacing: 0px;
-        
-        }
-        
-    }
 }
 
 @keyframes fade {
@@ -61,13 +47,20 @@
 }
 
 .landing_buttons {
+    width: 100%;
     display: flex;
     justify-content: center;
-    position: absolute;
-    top:75vh;
+    position:absolute;
+    top:80%;
     z-index:4;
     font-family: 'Anuphan';
 
+    @media (min-width:768px){
+        top:90%;
+    }
+    @media (min-width:1024px){
+        top:100%;
+    }
     a {
         padding: 1em;
         letter-spacing: 1px;
@@ -79,8 +72,8 @@
         
         @media (min-width:1024px){
             font-size: 1.2em;
-            padding: 1.5em;
             width: 300px;
+
         }
     }
 
@@ -90,16 +83,5 @@
     }
 }
 
-.landing::after {
-    height: 100vh;
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    background-color: black;
-    opacity: 0.3;
-}
+
 

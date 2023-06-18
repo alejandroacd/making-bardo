@@ -16,7 +16,7 @@ const HomeProductCard = (props) => {
     return (
 
         <>
-            <div id="ultimo" className='latest_home_card'>
+            <div id="ultimo" className='latest_home_card shadow'>
                 <div className='image_home_card'>
                     <img loading='lazy' src={props.image2} alt='Imágen del producto' />
                     <img loading='lazy' className='imghome-card-hover' src={props.image1} alt='Imágen del producto' />

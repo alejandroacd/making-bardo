@@ -2,6 +2,7 @@
     height: 100vh;
     position: relative;
     top:10vh;
+    transition: 1s;
 
 
     @media (min-width:1024px){
@@ -10,8 +11,63 @@
         height: 70vh;
     }
 
+    .product_modal {
 
+        transition: opacity 0.5s;
+        
+        width: 95%;
+        border: 0;
+        box-shadow: 0 0 1em rgb(0 0 0 / .3);
 
+        
+        @media (min-width:1024px){
+            width: 50ch;
+        }
+        h1 {
+            font-size:2em;
+            font-weight: bold;
+        }
+
+        .link {
+            padding: 0.1em;
+            display: flex;
+            align-items: center;
+            gap:10px
+ 
+        }
+        .link:hover {
+            transition: 1s;
+            text-decoration:underline;
+        }
+        p {
+            font-weight: lighter;
+            font-size: 1.1em;
+        }
+        li {
+            margin:1em;
+        }
+        button {
+            width: 80%;
+        }
+    }
+
+    .product_modal::backdrop {
+        background: black;
+        opacity: 0.4;
+       }
+
+       dialog[open] {
+        animation: myFadeIn 0.4s ease normal;
+      }
+      
+    @keyframes myFadeIn{
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
     button {
       
         margin-left: 10%;

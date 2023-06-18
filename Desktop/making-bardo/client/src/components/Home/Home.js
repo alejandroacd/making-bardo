@@ -13,7 +13,7 @@ const Home = () => {
         <>
         <Landing />
 
-        <div className='categories_section'>
+        <div  className='categories_section'>
             <div className='categories' id="categories">
         <Camperas />
         <Pants />

@@ -196,8 +196,8 @@ const products = [
         name: 'Pantalón Mbmb',
         price: '21150',
         description: '',
-        image1: '/pantalones/miranda1.jpg',
-        image2: '/pantalones/miranda2.jpg', 
+        image1: '/pantalones/mbmb1.jpg',
+        image2: '/pantalones/mbmb2.jpg', 
         
     },
     {

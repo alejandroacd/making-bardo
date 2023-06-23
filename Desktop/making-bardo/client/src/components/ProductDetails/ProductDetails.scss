@@ -1,11 +1,11 @@
 .product-detail-container {
     height: 100vh;
     position: relative;
-    top:10vh;
+    top: 10vh;
     transition: 1s;
 
 
-    @media (min-width:1024px){
+    @media (min-width:1024px) {
         display: flex;
         width: 70%;
         height: 70vh;
@@ -14,17 +14,18 @@
     .product_modal {
 
         transition: opacity 0.5s;
-        
+
         width: 95%;
         border: 0;
         box-shadow: 0 0 1em rgb(0 0 0 / .3);
 
-        
-        @media (min-width:1024px){
+
+        @media (min-width:1024px) {
             width: 50ch;
         }
+
         h1 {
-            font-size:2em;
+            font-size: 2em;
             font-weight: bold;
         }
 
@@ -32,20 +33,23 @@
             padding: 0.1em;
             display: flex;
             align-items: center;
-            gap:10px
- 
+            gap: 10px
         }
+
         .link:hover {
             transition: 1s;
-            text-decoration:underline;
+            text-decoration: underline;
         }
+
         p {
             font-weight: lighter;
             font-size: 1.1em;
         }
+
         li {
-            margin:1em;
+            margin: 1em;
         }
+
         button {
             width: 80%;
         }
@@ -54,42 +58,45 @@
     .product_modal::backdrop {
         background: black;
         opacity: 0.4;
-       }
+    }
 
-       dialog {
-        display:none;
-       }
-       dialog[open] {
+    dialog {
+        display: none;
+    }
+
+    dialog[open] {
         display: block;
         animation: myFadeIn 0.4s ease normal;
-      }
-      
-    @keyframes myFadeIn{
+    }
+
+    @keyframes myFadeIn {
         from {
-          opacity: 0;
+            opacity: 0;
         }
+
         to {
-          opacity: 1;
+            opacity: 1;
         }
-      }
+    }
+
     button {
-      
+
         margin-left: 10%;
         margin-bottom: 1em;
         font-weight: bold;
         border: none;
         background-color: var(--light);
         color: var(--gray);
-        border:1px solid var(--gray);
-        padding:0.7em;
+        border: 1px solid var(--gray);
+        padding: 0.7em;
         font-size: 0.9em;
         width: 80%;
-        
+
     }
 
     button:hover {
         background-color: var(--gray);
-        color:var(--light)
+        color: var(--light)
     }
 
     .go_back_container {
@@ -98,8 +105,8 @@
     }
 
     p {
-        margin:1em;
-        font-size:1.5em;
+        margin: 1em;
+        font-size: 1.5em;
         font-weight: bold;
     }
 
@@ -109,9 +116,9 @@
     }
 
     .product-details {
-     
+
         position: relative;
-        top:15%;
+        top: 15%;
         flex-direction: column;
     }
 
@@ -125,57 +132,61 @@
         object-fit: cover;
         transition: 0.5s all;
 
-        @media (min-width:1024px){
+        @media (min-width:1024px) {
             width: 60%;
             height: 80%;
-            top:13%
+            top: 13%
         }
     }
 
     .product_other_images {
         position: relative;
-        top:100%;
-        padding:1em;
+        top: 100%;
+        padding: 1em;
         width: 95%;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 20px;
+
         img {
             width: 15%;
             height: 15%;
-        
+
         }
     }
 }
 
-@media (min-width:1024px){
+@media (min-width:1024px) {
 
- .product-details {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h1 {
-        text-align: center;
+    .product-details {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            text-align: center;
+        }
     }
- }
-  .product-detail-container button {
-    width: 100%;
-    
-    font-weight: bold;
-  }
+
+    .product-detail-container button {
+        width: 100%;
+
+        font-weight: bold;
+    }
 
 
 
-  .product-detail-container li {
-    font-size:1.2em;
-  }
+    .product-detail-container li {
+        font-size: 1.2em;
+    }
+
     .product_detail_image {
-    
-       margin: 0 auto;
+
+        margin: 0 auto;
     }
 
-   
+
 }

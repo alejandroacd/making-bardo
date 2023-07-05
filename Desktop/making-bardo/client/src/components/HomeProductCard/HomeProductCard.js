@@ -3,7 +3,7 @@ import { useCart} from '../../contexts/cartContext'
 import { MdOutlineFavoriteBorder } from 'react-icons/md'
 
 
-const HomeProductCard = (props) => {
+ const HomeProductCard = (props) => {
 
     const { addToCart } = useCart()
     
@@ -38,3 +38,4 @@ const HomeProductCard = (props) => {
 }
 
 export default HomeProductCard
+

@@ -1,17 +1,20 @@
-import { Suspense } from 'react';
-import Landing from '../Landing/Landing'
+import '../Home/Home.scss'
+import React, { Suspense, lazy } from 'react';
 import Camperas from '../Camperas/Camperas';
 import Chalecos from '../Chalecos/Chalecos'
 import Pants from '../Pants/Pants'
-import HomeProductCard from '../HomeProductCard/HomeProductCard';
-import '../Home/Home.scss'
 import data from '../../dataProducts'
+import HomeProductCard from '../HomeProductCard/HomeProductCard'
+const Landing = lazy(() => import('../Landing/Landing'))
 
 const Home = () => {
 
     return (
         <>
+
+        <Suspense fallback={<div> ...CARGANDO</div>} >
         <Landing />
+        </Suspense>
 
         <div  className='categories_section'>
             <div className='categories' id="categories">
@@ -24,7 +27,7 @@ const Home = () => {
         <div className='latest_post'>
             {data.map(x => {
                 return (
-                    <Suspense fallback={<h1>Cargando</h1>}>
+                    <Suspense fallback={<div className='d-1'>...cargando</div>} >
                     <HomeProductCard code={x.code} key={x.code} name={x.name} image1={x.image1} image2={x.image2} price={x.price} />
                     </Suspense>
                 )

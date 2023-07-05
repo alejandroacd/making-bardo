@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 
-const Contacto = () => {
+export default function Contacto() {
 
-const location = useLocation()
-
+    const location = useLocation()
 
     return (
         <>
@@ -22,31 +21,23 @@ const location = useLocation()
                     <label htmlFor="email">E-MAIL:</label>
                     <br />
                     <input placeholder='Tu e-mail' type='text' name='email' id='email' />
-                    <br/>
+                    <br />
                     <label htmlFor="mensaje">MENSAJE: </label>
-                    <br/>
+                    <br />
                     <textarea placeholder="Escribe tu mensaje..." name="mensaje" id="mensaje" cols="35" rows="5"></textarea>
                     <br />
                     <button className="btn-submit btn btn-outline-dark" type="submit" > Enviar </button>
                 </form>
+                <div className='instagram'>
+                    <h1 className='instagram_title'>INSTAGRAM</h1>
 
-                
-             
-              <div className='instagram'>
-              <h1 className='instagram_title'>INSTAGRAM</h1>
-
-              <div className='instagram_logo'>
-              <BsInstagram size={35} />
-            <Link to="https://instagram.com/makingbardo"> <p>makingbardo</p> </Link>
-              </div>
-                
-              
-              </div>
-            
+                    <div className='instagram_logo'>
+                        <BsInstagram size={35} />
+                        <Link to="https://instagram.com/makingbardo"> <p>makingbardo</p> </Link>
+                    </div>
+                </div>
 
             </div>
         </>
     )
 }
-
-export default Contacto

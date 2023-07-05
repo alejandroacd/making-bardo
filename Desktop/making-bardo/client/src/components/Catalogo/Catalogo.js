@@ -4,7 +4,10 @@ import { HiChevronLeft } from 'react-icons/hi'
 import data from '../../dataProducts'
 import HomeProductCard from '../HomeProductCard/HomeProductCard'
 import { useNavigate } from 'react-router-dom'
-const Catalogo = () => {
+
+
+
+export default function Catalogo (){
 
 
     const navigate = useNavigate()
@@ -15,8 +18,6 @@ const Catalogo = () => {
     const setearCategory = (e) => {
         setCategory(e.target.value)
     }
-
-
 
     useEffect(() => {
         console.log(category)
@@ -49,4 +50,3 @@ const Catalogo = () => {
     )
 }
 
-export default Catalogo

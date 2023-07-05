@@ -3,7 +3,7 @@ import './Faq.scss'
 import { AiFillCaretDown } from 'react-icons/ai'
 
 
-const Faq = () => {
+export default function Faq() {
 
 
   const dropDown = (e) => {
@@ -27,16 +27,15 @@ const Faq = () => {
           argentino en tendencia. Buscamos una propuesta que rompa con estereotipos de la indumentaria masiva y ofreciendo una arriesgada combinación entre el diseño, el  arte y la moda. </p>
         </div>
 
-        
         <button className='collapsible' onClick={(e) => dropDown(e)}> ¿Cómo están hechas las prendas? <AiFillCaretDown/> </button>
         <div className='content'>
           <p> Utilizamos pintura para tela importada, e intervenimos sobre jean, específicamente rigido, para evitar el traspaso de la pintura y  obtener mayor adherencia de la misma.
 </p>
         </div>
 
-
         <button className='collapsible' onClick={(e) => dropDown(e)}> ¿Cómo cuidar las prendas? <AiFillCaretDown/> </button>
         <div className='content'>
+
           <p>En cada prenda que es entregada, se le agrega una hangtag, las cuales en su dorso, se encuentran algunos punteos para poder conservarlas en su mejor estado y que luzcan como el primer día.
             Estos cuidados son:
 
@@ -45,17 +44,13 @@ const Faq = () => {
             <li>Secar a la sombra</li>
             <li>Planchar sin vapor y del revés</li>
           </p>
-        </div>
 
+        </div>
 
         <button className='collapsible' onClick={(e) => dropDown(e)}>¿Cómo comprar? <AiFillCaretDown/> </button>
         <div className='content'>
           <p> En cada producto, podés seleccionar la opción de comprar un producto. El link te llevará directo al chat de la tienda a través de Whatsapp. En la brevededad te responderemos con la disponibilidad del producto, y se acordará el método de pago y/o envío.</p>
         </div>
-
-
-        
-
       </div>
 
 
@@ -63,4 +58,3 @@ const Faq = () => {
   )
 }
 
-export default Faq

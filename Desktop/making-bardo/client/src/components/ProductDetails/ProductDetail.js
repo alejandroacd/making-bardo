@@ -8,7 +8,7 @@ import { AiOutlineCreditCard } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom'
 import { useCart } from '../../contexts/cartContext'
 
-const ProductDetail = ({ props }) => {
+export default function ProductDetail ({ props }) {
 
     const navigate = useNavigate()
     const { addToCart } = useCart()
@@ -102,4 +102,3 @@ const ProductDetail = ({ props }) => {
         </div>
     )
 }
-export default ProductDetail

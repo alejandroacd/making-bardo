@@ -4,15 +4,18 @@ import Camperas from '../Camperas/Camperas';
 import Chalecos from '../Chalecos/Chalecos'
 import Pants from '../Pants/Pants'
 import data from '../../dataProducts'
-import HomeProductCard from '../HomeProductCard/HomeProductCard'
+
 const Landing = lazy(() => import('../Landing/Landing'))
+const HomeProductCard = lazy(() => import('../HomeProductCard/HomeProductCard'))
+
 
 const Home = () => {
 
     return (
+
         <>
 
-        <Suspense fallback={<div> ...CARGANDO</div>} >
+        <Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>} >
         <Landing />
         </Suspense>
 
@@ -21,13 +24,15 @@ const Home = () => {
         <Camperas />
         <Pants />
         <Chalecos />
+
         </div>
         </div>
         <h1 className='text-center m-5'> <b> LO ÚLTIMO </b></h1>
+
         <div className='latest_post'>
             {data.map(x => {
                 return (
-                    <Suspense fallback={<div className='d-1'>...cargando</div>} >
+                    <Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div></div>}>
                     <HomeProductCard code={x.code} key={x.code} name={x.name} image1={x.image1} image2={x.image2} price={x.price} />
                     </Suspense>
                 )
@@ -38,4 +43,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Home;

@@ -1,4 +1,4 @@
-import {  HiShoppingCart, HiEye } from 'react-icons/hi'
+import { HiEye } from 'react-icons/hi'
 import { useCart} from '../../contexts/cartContext'
 import { MdOutlineFavoriteBorder } from 'react-icons/md'
 

@@ -1,4 +1,4 @@
-const products = [
+ const products = [
     {
         code: 1,
         category: 'Camperas',

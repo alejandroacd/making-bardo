@@ -4,7 +4,7 @@ import { lazy, Suspense } from 'react'
 import './components/App.scss'
 import '../src/css/bootstrap.min.css'
 import Header from './components/Header/Header'
-import Home from './components/Home/Home'
+const Home = lazy(() =>import('./components/Home/Home'))
 const Dashboard = lazy(() => import('./components/Dashboard/Dashboard'))
 const Catalogo = lazy(() => import('./components/Catalogo/Catalogo'))
 const ProductDetail = lazy(() => import('./components/ProductDetails/ProductDetail'))
@@ -21,7 +21,7 @@ function App() {
     <div className="App">
     <Header />
     <Routes>
-      <Route exact path="/" element={<Home />} />
+      <Route exact path="/" element={<Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>}> <Home /> </Suspense>} />
       <Route exact path="/product/" element={<Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>}> <ProductDetail /> </Suspense>} />
       <Route exact path="/camperas" element={<Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>}> <Dashboard category="Camperas" /> </Suspense>}   />
       <Route exact path="/pantalones" element={<Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>}> <Dashboard category="Pantalones" /> </Suspense>}   />

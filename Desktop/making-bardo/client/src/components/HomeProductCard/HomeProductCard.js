@@ -10,8 +10,6 @@ import { MdOutlineFavoriteBorder } from 'react-icons/md'
     const redirect = () => {
         window.location = `/product/?id=${props.code}`
       }
-
-   
       
     return (
 

@@ -2,7 +2,7 @@
     position:unset;
     border: none;
     margin-bottom:1.5em;
-    
+
     .card-title {
         font-weight: bold;
     }
@@ -20,7 +20,7 @@
 
     img {
         margin: 0 auto;
-        width: 100%;
+        width: 90%;
         height: 100%;
         object-fit: contain;
       
@@ -46,18 +46,11 @@
  
 }
 
-.card img {
-    display: flex;
-    justify-content: row;
-    width: 100%
-    
-}
+
 
 @media (min-width:1024px) {
     .container .card .img_container img {
       width: 100%;
-
-   
     }  
 
     .container .card {

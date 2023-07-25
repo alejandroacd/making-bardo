@@ -27,7 +27,10 @@ function App() {
       <Route exact path="/pantalones" element={<Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>}> <Dashboard category="Pantalones" /> </Suspense>}   />
       <Route exact path="/chalecos" element={<Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>}> <Dashboard category="Chalecos" /> </Suspense>}  />
       <Route exact path="/catalogo" element={<Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>}> <Catalogo /> </Suspense>} />
-      <Route exact path='/contacto' element={<Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>}> <Contacto /> </Suspense>} /> 
+      <Route exact path='/contacto' element={<Suspense fallback={<div className='landing-loading'><div
+      
+      
+      className='lds-dual-ring'></div> </div>}> <Contacto /> </Suspense>} /> 
       <Route exact path='/faq' element={<Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>}> <Faq /> </Suspense>} />
       
     </Routes>

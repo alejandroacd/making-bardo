@@ -1,6 +1,7 @@
 import { HiEye } from 'react-icons/hi'
 import { useCart} from '../../contexts/cartContext'
 import { MdOutlineFavoriteBorder } from 'react-icons/md'
+import { AiOutlineCreditCard } from 'react-icons/ai'
 
 
  export default function HomeProductCard (props){
@@ -25,6 +26,8 @@ import { MdOutlineFavoriteBorder } from 'react-icons/md'
                 </div>
                 <h1> {props.name.toUpperCase()} </h1>
                 <p> {props.price} $ </p>
+                <p> <AiOutlineCreditCard  /> 3 cuotas sin interés </p>
+                <span> <b>20% off con efectivo / transferencia / mercado pago (envío de dinero) </b> </span>
 
                
             </div>

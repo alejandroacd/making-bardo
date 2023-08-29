@@ -102,7 +102,7 @@
     {
         code:11,
         category: 'Camperas',
-        name: 'Campera May',
+        name: 'Campera Mey',
         price: '41450',
         image1: '/camperas/may1.jpg',
         image2: '/camperas/may2.jpg'
@@ -118,6 +118,15 @@
     },
     {
         code:13,
+        category:'Camperas',
+        name:'Buzo Fog',
+        price:'25000',
+        image1:'/camperas/fog1.jpg',
+        image2:'/camperas/fog2.jpg',
+        image3:'/camperas/fog3.jpg'
+    },
+    {
+        code:14,
         category: 'Pantalones',
         name: 'Pantalón Donne',
         price: '29800',
@@ -127,7 +136,7 @@
         
     },
     {
-        code:14,
+        code:15,
         category: 'Pantalones',
         name: 'Pantalón Argento',
         price: '28860',
@@ -138,7 +147,7 @@
         
     },
     {
-        code:15,
+        code:16,
         category: 'Pantalones',
         name: 'Pantalón Miranda',
         price: '30900',
@@ -147,7 +156,7 @@
         image2: '/pantalones/miranda2.jpg',
     },
     {
-        code:16,
+        code:17,
         category: 'Pantalones',
         name: 'Pantalón ByCruz',
         price: '30900',
@@ -156,7 +165,7 @@
         image2: '/pantalones/bycruz2.jpg', 
     },
     {
-        code:17,
+        code:18,
         category: 'Pantalones',
         name: 'Pantalón Femmelines',
         price: '31200',
@@ -171,7 +180,7 @@
         
     },
     {
-        code:18,
+        code:19,
         category: 'Pantalones',
         name: 'Pantalón Kellybenett',
         price: '25700',
@@ -181,7 +190,7 @@
         
     },
     {
-        code:19,
+        code:20,
         category: 'Pantalones',
         name: 'Pantalón Maillot',
         price: '29400',
@@ -191,7 +200,7 @@
         
     },
     {
-        code:20,
+        code:21,
         category: 'Pantalones',
         name: 'Pantalón Mbmb',
         price: '29150',
@@ -201,7 +210,7 @@
         
     },
     {
-        code:21,
+        code:22,
         category: 'Pantalones',
         name: 'Pantalón Omnia',
         price: '31200',
@@ -211,7 +220,7 @@
         
     },
     {
-        code:22,
+        code:23,
         category: 'Pantalones',
         name: 'Pantalón Pollock',
         price: '31000',
@@ -221,7 +230,7 @@
         
     },
     {
-        code:23,
+        code:24,
         category: 'Pantalones',
         name: 'Pantalón Roots',
         price: '31000',
@@ -231,7 +240,7 @@
         
     },
     {
-        code:24,
+        code:25,
         category: 'Chalecos',
         name: 'Chaleco Mamba',
         price: '41450',
@@ -240,7 +249,7 @@
         image2:'/chalecos/mamba2.jpg'
     },
     {
-        code:25,
+        code:26,
         category: 'Chalecos',
         name: 'Chaleco Rnb',
         price: '40800',

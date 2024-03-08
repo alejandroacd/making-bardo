@@ -34,13 +34,6 @@ export default function ProductDetail ({ props }) {
         window.location.href = link + `phone=${number}&text=${message}`
     }
 
-    useEffect(() => {
-
-        console.log(category)
-        console.log(thisPage)
-
-    }, [])
-
     return (
         <div className='product-detail-container container mt-5'>
 
@@ -87,7 +80,7 @@ export default function ProductDetail ({ props }) {
             <div className='product-details container'>
                 <h1> {productData[0].name.toUpperCase()} </h1>
                 <p> {productData[0].price} $ </p>
-                <span> <AiOutlineCreditCard size={25} />  <b> 3 cuotas sin interés</b> </span>
+                <span> <AiOutlineCreditCard size={25} />  <b> 2 cuotas sin interés</b> </span>
                 <br />
                 <br />
                 <span> <b>20% off con efectivo / transferencia / mercado pago (envío de dinero) ( {productData[0].price - parseInt(productData[0].price) * 0.20} $  ) </b> </span>

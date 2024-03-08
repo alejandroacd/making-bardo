@@ -18,11 +18,7 @@ export default function Catalogo (){
     const setearCategory = (e) => {
         setCategory(e.target.value)
     }
-
-    useEffect(() => {
-        console.log(category)
-    }, [category])
-        
+    
     return (
         <div className='catalogo_block container'>
        <div onClick={() => navigate(-1)} className="go_back"> <HiChevronLeft /> Volver </div>

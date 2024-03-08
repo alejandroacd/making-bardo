@@ -1,6 +1,7 @@
 import {  useState } from 'react'
 import './Landing.scss'
 import background1 from './landingbackground.jpg'
+import Slider from './Slider'
 
 export default function Landing() {
 
@@ -9,12 +10,10 @@ export default function Landing() {
 
     return (
         <div className='landing_container'>
-            <div className={loaded ? 'landing loaded' : 'landing'} style={{ backgroundImage: `url(${background1})` }} onLoad={() => setLoaded(true)}>
-         
-            </div>
+            <Slider />
             <div className='landing_buttons'>
-                    <a href='#ultimo'>Lo último</a>
-                    <a href='#categories'>Ver categorías</a>
+                    <a href='#ultimo'>lo último</a>
+                    <a href='#categories'>ver categorías</a>
 
                 </div>
         </div>

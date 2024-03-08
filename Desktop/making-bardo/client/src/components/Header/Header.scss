@@ -1,16 +1,43 @@
+.header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background-color: transparent;
+    color:var(--dark-bg);
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+    z-index:3;
+    font-family: 'Poppins', sans-serif;
+    transition: 1s;
+    color:#fff;
 
-.header .logo_container {
-    @media (min-width:1021px) {
-        width: 30%;
+    @media (min-width: 756px){
+        width: 100%;
+        color:#fff;
+
     }
 }
-.header .logo_container img {
+
+.header .logo_container {
     width: 50%;
 
+    @media (min-width: 756px) {
+       width: 30%;
+    }
 }
 
 
+.header .logo_container img {
+    width: 100%;
+    margin: 0 auto;
 
+    @media (min-width: 756px) {
+        width: 60%;
+        margin:0.5em;
+    }
+}
 
 .showSubMenu {
     max-height: 400px;
@@ -112,39 +139,20 @@
     background-color: #fff;
 }
 
-.header {
-    position: fixed;
-    top:0;
-    width: 100%;
-    background-color: transparent;
-    color:var(--dark-bg);
-    display: flex;
-    justify-content: space-around;
-    height: 12vh;
-    align-items: center;
-    z-index:3;
-    font-family: 'Poppins', sans-serif;
-    transition: 1s;
-
-    @media (min-width:1024px){
-        width: 100%;
-    }
-}
 
 .header .header_list {
     display: flex;
     align-items: center;
     align-content: center;
-    margin:0.5em;
-    width: 50%;
+    font-size:1.5em;
+    width: 30%;
     justify-content: space-around;
-
     
     p {
     
         display: flex;
         position: relative;
-        top:0.5em;
+        top:0.4em;
         align-items: center;
        
     }
@@ -187,16 +195,7 @@
     .mobile_menu {
         display: none;
     }
-    .header .logo_container {
-        position: relative;
-        left: 10%;
-        display: flex;
-        align-items: center;
 
-        img {
-            width: 50%;
-        }
-    }
     .header .header_list  {
        
         width: 40%;
@@ -233,7 +232,7 @@
             li::after {
                 content: "";
                 position: absolute;
-                background: var(--dark-bg);
+                background: var(--primary-white);
                 height: 1px;
                 width:0;
                 opacity: 0;

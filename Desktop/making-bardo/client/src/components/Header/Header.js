@@ -24,11 +24,12 @@ const Header = () => {
             window.addEventListener('scroll', () => {
                 if(window.scrollY < 1000){
                     header.style.backgroundColor = 'transparent'
-                    headerlist.style.color = 'var(--dark-bg)'
-                    logo.src = '../logosinfondo2.png'
+                    headerlist.style.color = '#fff'
+                    logo.src = '../logosinfondo3.png'
                 }
                 if(window.scrollY>0){
                     header.style.backgroundColor = 'var(--dark-bg)'
+                    header.style.color = "#fff"
                     logo.src = '../logosinfondo3.png'
                     headerlist.style.color = 'var(--primary-white)'
 
@@ -58,14 +59,14 @@ const Header = () => {
             <div id="header" className="header d-flex">
     
                 <div className="logo_container" onClick={() => {window.location = '/'}} >
-                <img id="logo" alt="Logo making bardo" src="../logosinfondo2.png" /> 
+                <img id="logo" alt="Logo making bardo" src="../logosinfondo3.png" /> 
                  </div>
 
                 <div id="headerlist" className="header_list">
                     <ul className='group-list'>
                         <li onClick={() => {window.location = '/catalogo'}}> CATÁLOGO </li>
-                        <li onClick={() => {window.location = '/contacto'}}> CONTACTO </li>
-                        <li onClick={() => {window.location = '/faq'}}> <HiOutlineQuestionMarkCircle size={25} /> </li>
+                        <li onClick={() => {window.location = '/contacto'}}> CONCTACTO </li>
+                        <li onClick={() => {window.location = '/faq'}}> <HiOutlineQuestionMarkCircle size={35} /> </li>
                         <li onClick={() => showCart()}> {cart.length} <MdOutlineFavoriteBorder className='cart_list' size={25} /> </li>
                     </ul>
                     

@@ -31,20 +31,24 @@
 
    @media (min-width:1024px){
     flex-direction: row;
-    gap:1em;
+    gap:5em;
     margin-bottom:3em;
 }
 }
 
 .latest_home_card:hover {
-    transform: scale(1.02);
+    @media (min-width:768px){
+        border: 1px solid var(--dark-bg);
+  transform: scale(1.1);
+  border-radius: 13px;
+    }
 }
 .latest_post .latest_home_card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding:1em;
-    transition: 0.5s all;
+    transition: 0.3s all;
 
     @media (min-width:1024px){
         width: 25%;

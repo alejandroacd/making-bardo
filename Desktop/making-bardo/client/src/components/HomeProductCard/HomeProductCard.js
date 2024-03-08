@@ -24,9 +24,9 @@ import { AiOutlineCreditCard } from 'react-icons/ai'
                     <HiEye size={45} onClick={redirect} />
                 </div>
                 </div>
-                <h1> {props.name.toUpperCase()} </h1>
+                <h1> {props.name} </h1>
                 <p> {props.price} $ </p>
-                <p> <AiOutlineCreditCard  /> 3 cuotas sin interés </p>
+                <p> <AiOutlineCreditCard  /> 2 cuotas sin interés </p>
                 <span> <b>20% off con efectivo / transferencia / mercado pago (envío de dinero) </b> </span>
 
                

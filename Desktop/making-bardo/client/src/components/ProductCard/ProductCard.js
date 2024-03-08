@@ -13,10 +13,6 @@ const ProductCard = (props) => {
     window.location = `/product/?id=${props.code}`
   }
   
-  useEffect(() => {
-    console.log(props)
-  },[])
- 
     return (
         <>
         <div className="container">
@@ -29,7 +25,7 @@ const ProductCard = (props) => {
                     <p className='card-title'> {props.name.toUpperCase()}
                    </p>
                    <p className='card-text '>  {props.price} $ </p>
-                   <span> <AiOutlineCreditCard size={25} />  <b> 3 cuotas sin interés</b> </span>
+                   <span> <AiOutlineCreditCard size={25} />  <b> 2 cuotas sin interés</b> </span>
                    <br />
 
                    <div className='d-flex justify-content-row'>

@@ -21,8 +21,8 @@ export default function Home() {
             <div className='categories_section'>
                 <div className='categories' id="categories">
                     <Suspense fallback={<div className='landing-loading'><div className='lds-dual-ring'></div> </div>} >
-                        <CategoryOption category="Camperas" url={camperas} />
-                        <CategoryOption category="Pantalones" url={pantalones} />
+                        <CategoryOption category="Camperas" url={'./landingphoto4.jpg'} />
+                        <CategoryOption category="Pantalones" url={'./panta.jpg'} />
                         <CategoryOption category="Chalecos" url={chalecos} />
                     </Suspense>
 

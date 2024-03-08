@@ -7,14 +7,11 @@ const Cart = () => {
 
     const { cart, totalPrice, removeFromCart, showCart, toggleCart} = useCart()
 
-    useEffect(() => {
-        console.log(cart)
-    },[])
     return (
         <>
             <div className={toggleCart ? 'cart-container showCart' : 'cart-container hideCart' }>
                 <p onClick={showCart}> X </p>
-                <h1> CARRITO </h1>
+                <h1> LIKES </h1>
 
                 <div className='cart_products'>
                     {cart.map((x, y) => {
@@ -39,8 +36,7 @@ const Cart = () => {
                 </div>
 
                 <div className='checkout_box'>
-                <h1> Total: {totalPrice()}$ </h1>
-                <button className='btn btn-outline-light'> FINALIZAR COMPRA  </button>
+                <h1> Precio total de la lista: {totalPrice()}$ </h1>
                 </div>
             </div>
         </>

@@ -19,7 +19,7 @@ const Cart = () => {
                             <>
                             <div key={y} className='cart-product'>
                                 <div className='img_container'>
-                                    <img loading='lazy' alt="Imágen de producto agregado al carrito" src={x.image1} />
+                                    <img loading='lazy' alt="Imágen de producto agregado al carrito" src={x.image1 ? x.image1 : x.image2} />
                                 </div>
 
                                 <div className='info_container'>

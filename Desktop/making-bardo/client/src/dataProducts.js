@@ -142,21 +142,18 @@
         name: 'Pantalón Beta',
         price: '80000',
         description: '',
-        image1: '/beta1.jpg',
-        image2: '/beta2.jpg',
-        image3: '/beta3.jpg'
+        image2: '/beta3.jpg'
     },
     {
-        code: 15,
+        code: 16,
         category: 'Pantalones',
         name: 'Short Alfa',
         price: '60000',
         description: '',
-        image1: '/alfa1.jpg',
-        image2: '/alfa2.jpg'
+        image2: '/landingphoto3.jpg'
     },
     {
-        code: 16,
+        code: 17,
         category: 'Pantalones',
         name: 'Pantalón Odd',
         price: '81000',
@@ -164,15 +161,15 @@
         image1: '/odd1.jpg',
         image2: '/odd2.jpg'
     },
-    {
-        code: 17,
+    /*{
+        code: 18,
         category: 'Pantalones',
         name: 'Pantalón Gotha',
         price: '80500',
         description: '',
         image1: '/gotha1.jpg',
         image2: '/gotha2.jpg'
-    },
+    },*/
     {
         code:18,
         category: 'Pantalones',
@@ -195,7 +192,7 @@
         
     },
     {
-        code:17,
+        code:20,
         category: 'Pantalones',
         name: 'Pantalón Miranda',
         price: '78000',
@@ -204,7 +201,7 @@
         image2: '/pantalones/miranda2.jpg',
     },
     {
-        code:18,
+        code:21,
         category: 'Pantalones',
         name: 'Pantalón ByCruz',
         price: '79000',
@@ -213,7 +210,7 @@
         image2: '/pantalones/bycruz2.jpg', 
     },
     {
-        code:19,
+        code:22,
         category: 'Pantalones',
         name: 'Pantalón Femmelines',
         price: '80000',
@@ -228,7 +225,7 @@
         
     },
     {
-        code:20,
+        code:23,
         category: 'Pantalones',
         name: 'Pantalón Kellybenett',
         price: '29555',
@@ -238,7 +235,7 @@
         
     },
     {
-        code:21,
+        code:24,
         category: 'Pantalones',
         name: 'Pantalón Maillot',
         price: '78000',
@@ -248,7 +245,7 @@
         
     },
     {
-        code:22,
+        code:25,
         category: 'Pantalones',
         name: 'Pantalón Mbmb',
         price: '78000',
@@ -258,7 +255,7 @@
         
     },
     {
-        code:23,
+        code:26,
         category: 'Pantalones',
         name: 'Pantalón Omnia',
         price: '80500',
@@ -268,7 +265,7 @@
         
     },
     {
-        code:24,
+        code:27,
         category: 'Pantalones',
         name: 'Pantalón Pollock',
         price: '79000',
@@ -278,7 +275,7 @@
         
     },
     {
-        code:25,
+        code:28,
         category: 'Pantalones',
         name: 'Pantalón Roots',
         price: '80000',
@@ -288,7 +285,7 @@
         
     },
     {
-        code:25,
+        code:29,
         category: 'Chalecos',
         name: 'Chaleco Mamba',
         price: '90000',
@@ -297,7 +294,7 @@
         image2:'/chalecos/mamba2.jpg'
     },
     {
-        code:26,
+        code:30,
         category: 'Chalecos',
         name: 'Chaleco Rnb',
         price: '90000',

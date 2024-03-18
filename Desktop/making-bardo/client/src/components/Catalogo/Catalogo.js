@@ -28,10 +28,11 @@ export default function Catalogo (){
                 <h2> Filtrar por: </h2>
 
 
-                <select id="valor" onChange={(e) => setearCategory(e)}>
+                <select style={{padding:'0.5em;'}} id="valor" onChange={(e) => setearCategory(e)}>
                     <option>Camperas</option>
                     <option> Pantalones </option>
                     <option>Chalecos</option>
+                    <option>Shorts</option>
                 </select>
             </div>
 

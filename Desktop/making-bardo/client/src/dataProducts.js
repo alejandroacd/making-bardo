@@ -141,6 +141,7 @@
         name: 'Pantalón Beta',
         price: '80000',
         description: '',
+        image1: '/beta3.jpg',
         image2: '/beta3.jpg'
     },
     {
@@ -149,7 +150,8 @@
         name: 'Short Alfa',
         price: '60000',
         description: '',
-        image2: '/landingphoto3.jpg'
+        image2: '/landingphoto3.jpg',
+        image1: '/landingphoto3.jpg'
     },
     {
         code: 17,

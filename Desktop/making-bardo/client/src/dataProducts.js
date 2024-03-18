@@ -1,15 +1,14 @@
  const products = [
     {
-        code:1,
+        code:5,
         category: 'Camperas',
-        name: 'Campera Alice',
-        price: '94000',
-        priceDiscount: '27000',
+        name: 'Campera Shendenim',
+        price: '95000',
+        priceDiscount:'25480',
         description: '',
-        image1: '/alice1.jpg',
-        image2: '/alice2.jpg',
+        image1: '/camperas/shendenim2.jpg',
+        image2: '/camperas/shendenim1.jpg',
     },
-
     {
         code: 2,
         category: 'Camperas',
@@ -44,14 +43,14 @@
       
     },
     {
-        code:5,
+        code:1,
         category: 'Camperas',
-        name: 'Campera Shendenim',
-        price: '95000',
-        priceDiscount:'25480',
+        name: 'Campera Alice',
+        price: '94000',
+        priceDiscount: '27000',
         description: '',
-        image1: '/camperas/shendenim2.jpg',
-        image2: '/camperas/shendenim1.jpg',
+        image1: '/alice1.jpg',
+        image2: '/alice2.jpg',
     },
     {
         code:6,
@@ -132,9 +131,9 @@
         category:'Camperas',
         name:'Buzo Fog',
         price:'80000',
-        image1:'/camperas/fog1.jpg',
-        image2:'/camperas/fog2.jpg',
-        image3:'/camperas/fog3.jpg'
+        image1:'/camperas/fog2.jpg',
+        image2:'/camperas/fog3.jpg',
+        image3:'/camperas/fog1.jpg'
     },
     {
         code: 15,
@@ -146,7 +145,7 @@
     },
     {
         code: 16,
-        category: 'Pantalones',
+        category: 'Shorts',
         name: 'Short Alfa',
         price: '60000',
         description: '',
@@ -158,8 +157,8 @@
         name: 'Pantalón Odd',
         price: '81000',
         description: '',
-        image1: '/odd1.jpg',
-        image2: '/odd2.jpg'
+        image1: '/odd2.jpg',
+        image2: '/odd1.jpg'
     },
     /*{
         code: 18,

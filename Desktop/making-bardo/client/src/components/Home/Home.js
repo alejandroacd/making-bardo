@@ -24,6 +24,7 @@ export default function Home() {
                         <CategoryOption category="Camperas" url={'./landingphoto4.jpg'} />
                         <CategoryOption category="Pantalones" url={'./panta.jpg'} />
                         <CategoryOption category="Chalecos" url={chalecos} />
+                        <CategoryOption category="Shorts" url={'./landingphoto3.jpg'} />
                     </Suspense>
 
                 </div>

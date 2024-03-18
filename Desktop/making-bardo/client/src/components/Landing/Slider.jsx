@@ -4,8 +4,8 @@ import './Landing.scss'
 const Slider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const images = [
-    './landingphoto9.jpg',
-    './chalecolanding.jpg',
+    './camperas/mamba1.jpg',
+    './nuevalanding.jpg',
     './landingphoto2.jpg',
     './landingphoto3.jpg',
     './landingphoto5.jpg',

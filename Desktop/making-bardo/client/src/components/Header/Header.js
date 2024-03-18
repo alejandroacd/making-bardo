@@ -65,7 +65,7 @@ const Header = () => {
                 <div id="headerlist" className="header_list">
                     <ul className='group-list'>
                         <li onClick={() => {window.location = '/catalogo'}}> CATÁLOGO </li>
-                        <li onClick={() => {window.location = '/contacto'}}> CONCTACTO </li>
+                        <li onClick={() => {window.location = '/contacto'}}> CONTACTO </li>
                         <li onClick={() => {window.location = '/faq'}}> <HiOutlineQuestionMarkCircle size={35} /> </li>
                         <li onClick={() => showCart()}> {cart.length} <MdOutlineFavoriteBorder className='cart_list' size={25} /> </li>
                     </ul>
